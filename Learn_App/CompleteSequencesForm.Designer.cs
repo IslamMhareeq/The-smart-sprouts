@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CompleteSequencesForm));
             lblInstruction = new Label();
             txtNumber1 = new TextBox();
             txtNumber2 = new TextBox();
@@ -42,43 +43,51 @@
             // lblInstruction
             // 
             lblInstruction.AutoSize = true;
-            lblInstruction.Font = new Font("Stencil", 15F);
+            lblInstruction.BackColor = Color.Black;
+            lblInstruction.Font = new Font("Stencil", 12F);
+            lblInstruction.ForeColor = Color.White;
             lblInstruction.Location = new Point(114, 172);
             lblInstruction.Margin = new Padding(8, 0, 8, 0);
             lblInstruction.Name = "lblInstruction";
-            lblInstruction.Size = new Size(0, 47);
+            lblInstruction.Size = new Size(0, 38);
             lblInstruction.TabIndex = 0;
             // 
             // txtNumber1
             // 
-            txtNumber1.Font = new Font("Segoe UI", 15F);
+            txtNumber1.BackColor = Color.Black;
+            txtNumber1.Font = new Font("Stencil", 12F);
+            txtNumber1.ForeColor = Color.White;
             txtNumber1.Location = new Point(192, 322);
             txtNumber1.Margin = new Padding(8, 6, 8, 6);
             txtNumber1.Name = "txtNumber1";
-            txtNumber1.Size = new Size(141, 61);
+            txtNumber1.Size = new Size(141, 45);
             txtNumber1.TabIndex = 1;
             txtNumber1.TextChanged += txtNumber1_TextChanged;
             // 
             // txtNumber2
             // 
-            txtNumber2.Font = new Font("Segoe UI", 15F);
+            txtNumber2.BackColor = Color.Black;
+            txtNumber2.Font = new Font("Stencil", 12F);
+            txtNumber2.ForeColor = Color.White;
             txtNumber2.Location = new Point(391, 322);
             txtNumber2.Margin = new Padding(8, 6, 8, 6);
             txtNumber2.Name = "txtNumber2";
-            txtNumber2.Size = new Size(141, 61);
+            txtNumber2.Size = new Size(141, 45);
             txtNumber2.TabIndex = 2;
             txtNumber2.TextChanged += txtNumber2_TextChanged;
             // 
             // btnSubmit
             // 
-            btnSubmit.Font = new Font("Segoe UI", 15F);
+            btnSubmit.BackColor = Color.Black;
+            btnSubmit.Font = new Font("Stencil", 12F);
+            btnSubmit.ForeColor = Color.White;
             btnSubmit.Location = new Point(192, 394);
             btnSubmit.Margin = new Padding(8, 6, 8, 6);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(229, 64);
             btnSubmit.TabIndex = 3;
             btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += BtnSubmit_Click;
             // 
             // trfl
@@ -132,6 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1056, 931);
             Controls.Add(panel1);
             Controls.Add(trfl);

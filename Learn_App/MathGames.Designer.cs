@@ -29,6 +29,7 @@ namespace Learn_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MathGames));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -189,6 +190,7 @@ namespace Learn_App
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(825, 1195);
             Controls.Add(panel1);
             Controls.Add(label1);

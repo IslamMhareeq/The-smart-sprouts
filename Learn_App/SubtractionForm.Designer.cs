@@ -28,20 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubtractionForm));
             lblQuestion = new Label();
             txtAnswer = new TextBox();
-            btnSubmit = new Button();
             trfl = new Button();
             panel1 = new Panel();
             label1 = new Label();
             label6 = new Label();
+            btnSubmit = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblQuestion
             // 
             lblQuestion.AutoSize = true;
+            lblQuestion.BackColor = Color.Black;
             lblQuestion.Font = new Font("Stencil", 14F);
+            lblQuestion.ForeColor = Color.White;
             lblQuestion.Location = new Point(107, 124);
             lblQuestion.Margin = new Padding(8, 0, 8, 0);
             lblQuestion.Name = "lblQuestion";
@@ -50,27 +53,15 @@
             // 
             // txtAnswer
             // 
+            txtAnswer.BackColor = Color.Black;
             txtAnswer.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtAnswer.ForeColor = Color.White;
             txtAnswer.Location = new Point(127, 238);
             txtAnswer.Margin = new Padding(8, 6, 8, 6);
             txtAnswer.Name = "txtAnswer";
             txtAnswer.Size = new Size(458, 52);
             txtAnswer.TabIndex = 1;
             txtAnswer.TextChanged += txtAnswer_TextChanged;
-            // 
-            // btnSubmit
-            // 
-            btnSubmit.FlatAppearance.BorderColor = Color.Aqua;
-            btnSubmit.FlatStyle = FlatStyle.System;
-            btnSubmit.Font = new Font("Stencil", 14F);
-            btnSubmit.Location = new Point(249, 319);
-            btnSubmit.Margin = new Padding(8, 6, 8, 6);
-            btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(164, 58);
-            btnSubmit.TabIndex = 2;
-            btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
-            btnSubmit.Click += BtnSubmit_Click;
             // 
             // trfl
             // 
@@ -121,14 +112,28 @@
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
+            // btnSubmit
+            // 
+            btnSubmit.BackColor = Color.Black;
+            btnSubmit.Font = new Font("Stencil", 14F);
+            btnSubmit.ForeColor = Color.White;
+            btnSubmit.Location = new Point(211, 320);
+            btnSubmit.Margin = new Padding(7);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(184, 57);
+            btnSubmit.TabIndex = 6;
+            btnSubmit.Text = "Submit";
+            btnSubmit.UseVisualStyleBackColor = false;
+            // 
             // SubtractionForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(868, 708);
+            Controls.Add(btnSubmit);
             Controls.Add(panel1);
             Controls.Add(trfl);
-            Controls.Add(btnSubmit);
             Controls.Add(txtAnswer);
             Controls.Add(lblQuestion);
             Margin = new Padding(8, 6, 8, 6);
@@ -146,10 +151,10 @@
 
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.TextBox txtAnswer;
-        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button trfl;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private Label label1;
+        private Button btnSubmit;
     }
 }

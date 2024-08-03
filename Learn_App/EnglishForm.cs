@@ -29,13 +29,17 @@ namespace WinFormsApp2
         private void letterOrder_Click(object sender, EventArgs e)
         {
             spellLetters form = new spellLetters(currentUser, userManager);
+            this.Hide();
             form.Show();
+            form.FormClosed += (s, args) => this.Close();
 
         }
         private void letterMatch_Click(object sender, EventArgs e)
         {
             MatchingLetters form = new MatchingLetters(currentUser, userManager);
+            this.Hide();
             form.Show();
+            form.FormClosed += (s, args) => this.Close();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

@@ -28,20 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WriteNumbersInOrderForm));
             lblInstruction = new Label();
             txtNumbers = new TextBox();
             btnSubmit = new Button();
             trfl = new Button();
             panel1 = new Panel();
-            label6 = new Label();
             label1 = new Label();
+            label6 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblInstruction
             // 
             lblInstruction.AutoSize = true;
+            lblInstruction.BackColor = SystemColors.ActiveCaptionText;
             lblInstruction.Font = new Font("Stencil", 13F);
+            lblInstruction.ForeColor = SystemColors.ButtonHighlight;
             lblInstruction.Location = new Point(45, 122);
             lblInstruction.Margin = new Padding(7, 0, 7, 0);
             lblInstruction.Name = "lblInstruction";
@@ -52,9 +55,11 @@
             // 
             // txtNumbers
             // 
+            txtNumbers.BackColor = SystemColors.WindowText;
             txtNumbers.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNumbers.ForeColor = SystemColors.Window;
             txtNumbers.Location = new Point(220, 326);
-            txtNumbers.Margin = new Padding(7, 7, 7, 7);
+            txtNumbers.Margin = new Padding(7);
             txtNumbers.Name = "txtNumbers";
             txtNumbers.Size = new Size(794, 52);
             txtNumbers.TabIndex = 1;
@@ -62,14 +67,16 @@
             // 
             // btnSubmit
             // 
+            btnSubmit.BackColor = Color.Black;
             btnSubmit.Font = new Font("Stencil", 14F);
+            btnSubmit.ForeColor = Color.White;
             btnSubmit.Location = new Point(333, 503);
-            btnSubmit.Margin = new Padding(7, 7, 7, 7);
+            btnSubmit.Margin = new Padding(7);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(184, 57);
             btnSubmit.TabIndex = 2;
             btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += BtnSubmit_Click;
             // 
             // trfl
@@ -93,21 +100,9 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1359, 81);
+            panel1.Size = new Size(1381, 81);
             panel1.TabIndex = 11;
             panel1.Paint += panel1_Paint;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Viner Hand ITC", 16F);
-            label6.Location = new Point(8, 6);
-            label6.Margin = new Padding(2, 0, 2, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(139, 69);
-            label6.TabIndex = 3;
-            label6.Text = "Back";
-            label6.Click += label6_Click;
             // 
             // label1
             // 
@@ -121,17 +116,30 @@
             label1.TabIndex = 7;
             label1.Text = "Learn App";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Viner Hand ITC", 16F);
+            label6.Location = new Point(8, 6);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(139, 69);
+            label6.TabIndex = 3;
+            label6.Text = "Back";
+            label6.Click += label6_Click;
+            // 
             // WriteNumbersInOrderForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1359, 1068);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1381, 1068);
             Controls.Add(panel1);
             Controls.Add(trfl);
             Controls.Add(btnSubmit);
             Controls.Add(txtNumbers);
             Controls.Add(lblInstruction);
-            Margin = new Padding(7, 7, 7, 7);
+            Margin = new Padding(7);
             Name = "WriteNumbersInOrderForm";
             Text = "Write Numbers in Order";
             Load += WriteNumbersInOrderForm_Load;

@@ -8,11 +8,21 @@ using System.Windows.Forms;
 
 namespace Learn_App
 {
+
     public partial class Store : Form
     {
-        public Store()
+        private User currentUser;
+        private UserManager userManager;
+        public Store(User user, UserManager userManager)
         {
             InitializeComponent();
+            currentUser = user;
+            this.userManager = userManager;
+        }
+
+        private void Store_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

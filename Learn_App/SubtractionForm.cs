@@ -39,6 +39,7 @@ namespace Learn_App
 
         private void BtnSubmit_Click(object sender, EventArgs e)
         {
+       
             int answer;
             if (int.TryParse(txtAnswer.Text, out answer) && answer == number1 - number2)
             {

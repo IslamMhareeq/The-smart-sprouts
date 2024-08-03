@@ -22,6 +22,7 @@ namespace Learn_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdditionForm));
             lblQuestion = new Label();
             txtAnswer = new TextBox();
             btnSubmit = new Button();
@@ -35,32 +36,39 @@ namespace Learn_App
             // lblQuestion
             // 
             lblQuestion.AutoSize = true;
-            lblQuestion.Font = new Font("Stencil", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestion.BackColor = Color.Black;
+            lblQuestion.Font = new Font("Stencil", 13.875F);
+            lblQuestion.ForeColor = Color.White;
             lblQuestion.Location = new Point(181, 269);
             lblQuestion.Margin = new Padding(8, 0, 8, 0);
             lblQuestion.Name = "lblQuestion";
-            lblQuestion.Size = new Size(0, 47);
+            lblQuestion.Size = new Size(0, 44);
             lblQuestion.TabIndex = 0;
             // 
             // txtAnswer
             // 
-            txtAnswer.Font = new Font("Segoe UI", 15F);
+            txtAnswer.BackColor = Color.Black;
+            txtAnswer.Font = new Font("Stencil", 13.875F);
+            txtAnswer.ForeColor = Color.White;
             txtAnswer.Location = new Point(148, 377);
             txtAnswer.Margin = new Padding(8, 6, 8, 6);
             txtAnswer.Name = "txtAnswer";
-            txtAnswer.Size = new Size(279, 61);
+            txtAnswer.Size = new Size(279, 51);
             txtAnswer.TabIndex = 1;
             txtAnswer.TextChanged += txtAnswer_TextChanged;
             // 
             // btnSubmit
             // 
+            btnSubmit.BackColor = Color.Black;
+            btnSubmit.Font = new Font("Stencil", 13.875F);
+            btnSubmit.ForeColor = Color.White;
             btnSubmit.Location = new Point(148, 451);
             btnSubmit.Margin = new Padding(8, 6, 8, 6);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(231, 79);
             btnSubmit.TabIndex = 2;
             btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += BtnSubmit_Click;
             // 
             // trfl
@@ -114,6 +122,7 @@ namespace Learn_App
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(908, 989);
             Controls.Add(panel1);
             Controls.Add(trfl);

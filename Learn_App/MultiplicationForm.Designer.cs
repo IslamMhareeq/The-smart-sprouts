@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MultiplicationForm));
             lblQuestion = new Label();
             txtAnswer = new TextBox();
             btnSubmit = new Button();
@@ -41,7 +42,9 @@
             // lblQuestion
             // 
             lblQuestion.AutoSize = true;
+            lblQuestion.BackColor = Color.Black;
             lblQuestion.Font = new Font("Stencil", 14F);
+            lblQuestion.ForeColor = Color.White;
             lblQuestion.Location = new Point(254, 246);
             lblQuestion.Margin = new Padding(8, 0, 8, 0);
             lblQuestion.Name = "lblQuestion";
@@ -50,7 +53,9 @@
             // 
             // txtAnswer
             // 
+            txtAnswer.BackColor = Color.Black;
             txtAnswer.Font = new Font("Stencil", 14F);
+            txtAnswer.ForeColor = Color.White;
             txtAnswer.Location = new Point(146, 319);
             txtAnswer.Margin = new Padding(8, 6, 8, 6);
             txtAnswer.Name = "txtAnswer";
@@ -60,24 +65,27 @@
             // 
             // btnSubmit
             // 
+            btnSubmit.BackColor = Color.Black;
             btnSubmit.Font = new Font("Stencil", 14F);
-            btnSubmit.Location = new Point(254, 458);
+            btnSubmit.ForeColor = Color.White;
+            btnSubmit.Location = new Point(226, 458);
             btnSubmit.Margin = new Padding(8, 6, 8, 6);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(164, 58);
+            btnSubmit.Size = new Size(192, 58);
             btnSubmit.TabIndex = 2;
             btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;
             // 
             // trfl
             // 
             trfl.BackColor = Color.White;
             trfl.Font = new Font("Stencil", 14F);
-            trfl.Location = new Point(425, 469);
+            trfl.ForeColor = Color.White;
+            trfl.Location = new Point(428, 469);
             trfl.Margin = new Padding(2);
             trfl.Name = "trfl";
-            trfl.Size = new Size(39, 47);
+            trfl.Size = new Size(36, 47);
             trfl.TabIndex = 5;
             trfl.UseVisualStyleBackColor = false;
             trfl.Click += trfl_Click;
@@ -122,6 +130,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(820, 854);
             Controls.Add(panel1);
             Controls.Add(trfl);
