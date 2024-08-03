@@ -30,6 +30,7 @@ namespace Learn_App
                     worksheet.Cell(1, 4).Value = "Email";
                     worksheet.Cell(1, 5).Value = "Gender";
                     worksheet.Cell(1, 6).Value = "Points";
+                    worksheet.Cell(1, 7).Value = "PurchasedItems";
 
                     for (int i = 0; i < users.Count; i++)
                     {
@@ -39,6 +40,7 @@ namespace Learn_App
                         worksheet.Cell(i + 2, 4).Value = users[i].Email;
                         worksheet.Cell(i + 2, 5).Value = users[i].Gender;
                         worksheet.Cell(i + 2, 6).Value = users[i].Points;
+                        worksheet.Cell(i + 2, 7).Value = string.Join(",", users[i].PurchasedItems.Select(p => $"{p.Name}:{p.Quantity}"));
                     }
 
                     workbook.SaveAs(filePath);
@@ -46,7 +48,6 @@ namespace Learn_App
             }
             catch (IOException ex)
             {
-                // Log the exception (implementation depends on your logging framework)
                 Console.WriteLine("Error writing to file: " + ex.Message);
             }
         }
@@ -72,15 +73,35 @@ namespace Learn_App
                             string email = row.Cell(4).GetValue<string>();
                             string gender = row.Cell(5).GetValue<string>();
                             int points = row.Cell(6).GetValue<int>();
+                            var purchasedItemsString = row.Cell(7).GetValue<string>();
 
-                            User user = new User(username, password, id, email, gender, points);
+                            var purchasedItems = new List<Product>();
+                            if (!string.IsNullOrEmpty(purchasedItemsString))
+                            {
+                                purchasedItems = purchasedItemsString.Split(',')
+                                    .Select(p =>
+                                    {
+                                        var parts = p.Split(':');
+                                        if (parts.Length == 2 && int.TryParse(parts[1], out int quantity))
+                                        {
+                                            return new Product(parts[0], 0, quantity); // Price is not needed for this list
+                                        }
+                                        return null;
+                                    })
+                                    .Where(p => p != null)
+                                    .ToList();
+                            }
+
+                            User user = new User(username, password, id, email, gender, points)
+                            {
+                                PurchasedItems = purchasedItems
+                            };
                             loadedUsers.Add(user);
                         }
                     }
                 }
                 catch (IOException ex)
                 {
-                    // Log the exception (implementation depends on your logging framework)
                     Console.WriteLine("Error reading from file: " + ex.Message);
                 }
             }
@@ -142,7 +163,7 @@ namespace Learn_App
 
         private void ValidateGender(string gender)
         {
-            if (!string.IsNullOrEmpty(gender) && gender != "Male" && gender != "Female" )
+            if (!string.IsNullOrEmpty(gender) && gender != "Male" && gender != "Female")
             {
                 throw new ArgumentException("Invalid gender");
             }
@@ -187,10 +208,9 @@ namespace Learn_App
                 existingUser.Email = user.Email;
                 existingUser.Gender = user.Gender;
                 existingUser.Points = user.Points;
+                existingUser.PurchasedItems = user.PurchasedItems;
                 SaveAllUsers();
             }
         }
-
-
     }
 }

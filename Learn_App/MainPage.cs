@@ -93,7 +93,7 @@ namespace Learn_App
             else
             {
                 flowLayoutPanel1.Width += 10;
-                if (flowLayoutPanel1.Width >= 418)
+                if (flowLayoutPanel1.Width >= 322)
                 {
                     sidex = true;
                     sidebartran.Stop();
@@ -162,6 +162,10 @@ namespace Learn_App
 
         private void label3_Click(object sender, EventArgs e)
         {
+            var form = new Store(currentUser, userManager);
+            this.Hide();
+            form.Show();
+            form.FormClosed += (s, args) => this.Close();
         }
         private void Form1_Load(object sender, EventArgs e)
         {

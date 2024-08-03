@@ -14,6 +14,7 @@ namespace Learn_App
             currentUser = user; // Initialize currentUser first
             this.userManager = userManager;
             DisplayUserName();
+            DisplayPurchasedItems();
         }
 
         private void DisplayUserName()
@@ -22,12 +23,18 @@ namespace Learn_App
             label2.Text = $"Your points: {currentUser.Points}";
             label3.Text = $"Your email: {currentUser.Email}";
             label4.Text = $"Your password: {currentUser.Password}";
+        }
 
+        private void DisplayPurchasedItems()
+        {
+            foreach (var item in currentUser.PurchasedItems)
+            {
+                purchasedItemsListBox.Items.Add($"{item.Name} - Quantity: {item.Quantity}");
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-           
             var form = new UbdatePr(currentUser, userManager);
             this.Hide();
             form.Show();
