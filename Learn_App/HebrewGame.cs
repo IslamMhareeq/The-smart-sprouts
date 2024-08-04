@@ -155,7 +155,7 @@ namespace Learn_App
 
         private void label6_Click_1(object sender, EventArgs e)
         {
-            var form = new MainPage(currentUser, userManager);
+            var form = new HebrewGames(currentUser, userManager);
             this.Hide();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
