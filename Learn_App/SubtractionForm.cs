@@ -37,9 +37,9 @@ namespace Learn_App
             GenerateNewQuestion();
         }
 
-        private void BtnSubmit_Click(object sender, EventArgs e)
+        private void btnSubmit_Click_1(object sender, EventArgs e)
         {
-       
+
             int answer;
             if (int.TryParse(txtAnswer.Text, out answer) && answer == number1 - number2)
             {
@@ -87,5 +87,7 @@ namespace Learn_App
         {
 
         }
+
+
     }
 }

@@ -45,10 +45,10 @@
             lblInstruction.BackColor = SystemColors.ActiveCaptionText;
             lblInstruction.Font = new Font("Stencil", 13F);
             lblInstruction.ForeColor = SystemColors.ButtonHighlight;
-            lblInstruction.Location = new Point(45, 122);
-            lblInstruction.Margin = new Padding(7, 0, 7, 0);
+            lblInstruction.Location = new Point(35, 95);
+            lblInstruction.Margin = new Padding(5, 0, 5, 0);
             lblInstruction.Name = "lblInstruction";
-            lblInstruction.Size = new Size(801, 42);
+            lblInstruction.Size = new Size(592, 31);
             lblInstruction.TabIndex = 0;
             lblInstruction.Text = "Arrange the numbers in ascending order:";
             lblInstruction.Click += lblInstruction_Click;
@@ -58,10 +58,10 @@
             txtNumbers.BackColor = SystemColors.WindowText;
             txtNumbers.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNumbers.ForeColor = SystemColors.Window;
-            txtNumbers.Location = new Point(220, 326);
-            txtNumbers.Margin = new Padding(7);
+            txtNumbers.Location = new Point(169, 255);
+            txtNumbers.Margin = new Padding(5, 5, 5, 5);
             txtNumbers.Name = "txtNumbers";
-            txtNumbers.Size = new Size(794, 52);
+            txtNumbers.Size = new Size(612, 41);
             txtNumbers.TabIndex = 1;
             txtNumbers.TextChanged += txtNumbers_TextChanged;
             // 
@@ -70,10 +70,10 @@
             btnSubmit.BackColor = Color.Black;
             btnSubmit.Font = new Font("Stencil", 14F);
             btnSubmit.ForeColor = Color.White;
-            btnSubmit.Location = new Point(333, 503);
-            btnSubmit.Margin = new Padding(7);
+            btnSubmit.Location = new Point(256, 393);
+            btnSubmit.Margin = new Padding(5, 5, 5, 5);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(184, 57);
+            btnSubmit.Size = new Size(142, 45);
             btnSubmit.TabIndex = 2;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = false;
@@ -83,10 +83,10 @@
             // 
             trfl.BackColor = Color.White;
             trfl.Font = new Font("Stencil", 14F);
-            trfl.Location = new Point(534, 515);
+            trfl.Location = new Point(411, 402);
             trfl.Margin = new Padding(2);
             trfl.Name = "trfl";
-            trfl.Size = new Size(61, 46);
+            trfl.Size = new Size(47, 36);
             trfl.TabIndex = 7;
             trfl.UseVisualStyleBackColor = false;
             trfl.Click += trfl_Click;
@@ -100,7 +100,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1381, 81);
+            panel1.Size = new Size(1883, 63);
             panel1.TabIndex = 11;
             panel1.Paint += panel1_Paint;
             // 
@@ -109,10 +109,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Viner Hand ITC", 18F);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(544, 1);
+            label1.Location = new Point(418, 1);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(270, 78);
+            label1.Size = new Size(202, 58);
             label1.TabIndex = 7;
             label1.Text = "Learn App";
             // 
@@ -120,26 +120,26 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Viner Hand ITC", 16F);
-            label6.Location = new Point(8, 6);
+            label6.Location = new Point(6, 5);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(139, 69);
+            label6.Size = new Size(102, 52);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
             // WriteNumbersInOrderForm
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1381, 1068);
+            ClientSize = new Size(1883, 1039);
             Controls.Add(panel1);
             Controls.Add(trfl);
             Controls.Add(btnSubmit);
             Controls.Add(txtNumbers);
             Controls.Add(lblInstruction);
-            Margin = new Padding(7);
+            Margin = new Padding(5, 5, 5, 5);
             Name = "WriteNumbersInOrderForm";
             Text = "Write Numbers in Order";
             Load += WriteNumbersInOrderForm_Load;

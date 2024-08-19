@@ -47,10 +47,9 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1417, 139);
-            button2.Margin = new Padding(6);
+            button2.Location = new Point(514, 72);
             button2.Name = "button2";
-            button2.Size = new Size(199, 94);
+            button2.Size = new Size(107, 44);
             button2.TabIndex = 36;
             button2.Text = "Shuffle";
             button2.UseVisualStyleBackColor = true;
@@ -59,24 +58,29 @@
             // userInputTextBox
             // 
             userInputTextBox.Animated = true;
+            userInputTextBox.BackColor = Color.PaleTurquoise;
+            userInputTextBox.BorderColor = Color.Black;
+            userInputTextBox.BorderRadius = 20;
+            userInputTextBox.BorderThickness = 5;
             userInputTextBox.CustomizableEdges = customizableEdges1;
             userInputTextBox.DefaultText = "";
             userInputTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             userInputTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             userInputTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             userInputTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            userInputTextBox.FillColor = Color.FromArgb(234, 251, 252);
             userInputTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             userInputTextBox.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             userInputTextBox.ForeColor = Color.Black;
             userInputTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            userInputTextBox.Location = new Point(587, 514);
-            userInputTextBox.Margin = new Padding(26, 28, 26, 28);
+            userInputTextBox.Location = new Point(82, 271);
+            userInputTextBox.Margin = new Padding(14, 13, 14, 13);
             userInputTextBox.Name = "userInputTextBox";
             userInputTextBox.PasswordChar = '\0';
             userInputTextBox.PlaceholderText = "abcde , ABCDE , abCdE (A-E)";
             userInputTextBox.SelectedText = "";
             userInputTextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            userInputTextBox.Size = new Size(979, 160);
+            userInputTextBox.Size = new Size(527, 75);
             userInputTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             userInputTextBox.TabIndex = 39;
             userInputTextBox.TextChanged += userInputTextBox_TextChanged;
@@ -84,39 +88,37 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(351, 540);
-            label2.Margin = new Padding(6, 0, 6, 0);
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(33, 226);
             label2.Name = "label2";
-            label2.Size = new Size(221, 65);
+            label2.Size = new Size(116, 27);
             label2.TabIndex = 40;
             label2.Text = "Answer:";
             // 
             // questionLetter
             // 
             questionLetter.AutoSize = true;
-            questionLetter.BackColor = Color.Transparent;
+            questionLetter.BackColor = Color.White;
             questionLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            questionLetter.ForeColor = SystemColors.Control;
-            questionLetter.Location = new Point(490, 164);
-            questionLetter.Margin = new Padding(6, 0, 6, 0);
+            questionLetter.ForeColor = Color.Black;
+            questionLetter.Location = new Point(33, 77);
             questionLetter.Name = "questionLetter";
-            questionLetter.Size = new Size(118, 65);
+            questionLetter.Size = new Size(59, 32);
             questionLetter.TabIndex = 33;
             questionLetter.Text = "test";
             // 
             // submitButton
             // 
+            submitButton.BackColor = SystemColors.ActiveCaption;
             submitButton.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            submitButton.Location = new Point(717, 736);
-            submitButton.Margin = new Padding(6);
+            submitButton.Location = new Point(221, 376);
             submitButton.Name = "submitButton";
-            submitButton.Size = new Size(345, 145);
+            submitButton.Size = new Size(186, 68);
             submitButton.TabIndex = 41;
             submitButton.Text = "Submit";
-            submitButton.UseVisualStyleBackColor = true;
+            submitButton.UseVisualStyleBackColor = false;
             submitButton.Click += submitButton_Click;
             // 
             // guna2MessageDialog1
@@ -126,7 +128,7 @@
             guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
             guna2MessageDialog1.Parent = this;
             guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark;
-            guna2MessageDialog1.Text = "Correct answer, you've earned {x} points!";
+            guna2MessageDialog1.Text = "Correct answer, you've earned 1 point!";
             // 
             // guna2MessageDialog2
             // 
@@ -139,49 +141,52 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(20, 42, 46);
+            panel1.BackColor = Color.LightCyan;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label6);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2);
+            panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1837, 106);
+            panel1.Size = new Size(699, 50);
             panel1.TabIndex = 42;
             panel1.Paint += panel1_Paint;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Viner Hand ITC", 18F);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(783, 14);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Font = new Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(232, 9);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(270, 78);
+            label1.Size = new Size(234, 27);
             label1.TabIndex = 5;
-            label1.Text = "Learn App";
+            label1.Text = "The smart sprouts";
+            label1.Click += label1_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Viner Hand ITC", 20F);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(8, 6);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Cooper Black", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(1, 6);
+            label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
-            label6.Size = new Size(174, 87);
+            label6.Size = new Size(82, 31);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
             // spellLetters
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveBorder;
+            BackColor = Color.Snow;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1837, 1109);
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(699, 662);
             Controls.Add(panel1);
             Controls.Add(submitButton);
             Controls.Add(questionLetter);
@@ -189,10 +194,10 @@
             Controls.Add(userInputTextBox);
             Controls.Add(button2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(6);
             Name = "spellLetters";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "spellLetters";
+            Load += spellLetters_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

@@ -73,58 +73,63 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             guna2Transition1.SetDecoration(label5, Guna.UI2.AnimatorNS.DecorationType.None);
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(189, 472);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(88, 164);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(758, 82);
+            label5.Size = new Size(333, 34);
             label5.TabIndex = 12;
             label5.Text = "Contains between 6 and 8 characters. 2 digits at max\r\nand the rest are letters\r\n";
             // 
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             guna2Transition1.SetDecoration(label6, Guna.UI2.AnimatorNS.DecorationType.None);
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(189, 874);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(92, 344);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(812, 82);
+            label6.Size = new Size(357, 34);
             label6.TabIndex = 13;
             label6.Text = "Between 8 and 10 characters. Contains at least one letter\r\nand one digit and one special character (!$, #, etc.)";
             // 
             // maleButton
             // 
             maleButton.AutoSize = true;
+            maleButton.BackColor = Color.Transparent;
             maleButton.Checked = true;
             guna2Transition1.SetDecoration(maleButton, Guna.UI2.AnimatorNS.DecorationType.None);
             maleButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            maleButton.Location = new Point(197, 1693);
-            maleButton.Margin = new Padding(4, 7, 4, 7);
+            maleButton.Location = new Point(99, 675);
+            maleButton.Margin = new Padding(2, 3, 2, 3);
             maleButton.Name = "maleButton";
-            maleButton.Size = new Size(155, 63);
+            maleButton.Size = new Size(73, 29);
             maleButton.TabIndex = 19;
             maleButton.TabStop = true;
             maleButton.Text = "Male";
-            maleButton.UseVisualStyleBackColor = true;
+            maleButton.UseVisualStyleBackColor = false;
             // 
             // femaleButton
             // 
             femaleButton.AutoSize = true;
+            femaleButton.BackColor = Color.Transparent;
             guna2Transition1.SetDecoration(femaleButton, Guna.UI2.AnimatorNS.DecorationType.None);
             femaleButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            femaleButton.Location = new Point(377, 1693);
-            femaleButton.Margin = new Padding(4, 7, 4, 7);
+            femaleButton.Location = new Point(183, 675);
+            femaleButton.Margin = new Padding(2, 3, 2, 3);
             femaleButton.Name = "femaleButton";
-            femaleButton.Size = new Size(198, 63);
+            femaleButton.Size = new Size(92, 29);
             femaleButton.TabIndex = 20;
             femaleButton.Text = "Female";
-            femaleButton.UseVisualStyleBackColor = true;
+            femaleButton.UseVisualStyleBackColor = false;
             // 
             // passwordBox
             // 
             passwordBox.Animated = true;
+            passwordBox.BackColor = Color.Transparent;
             passwordBox.BorderRadius = 10;
             passwordBox.BorderThickness = 2;
             passwordBox.CustomizableEdges = customizableEdges1;
@@ -138,43 +143,49 @@
             passwordBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             passwordBox.ForeColor = Color.Black;
             passwordBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            passwordBox.Location = new Point(189, 719);
-            passwordBox.Margin = new Padding(11, 15, 11, 15);
+            passwordBox.Location = new Point(88, 284);
+            passwordBox.Margin = new Padding(5, 6, 5, 6);
             passwordBox.Name = "passwordBox";
             passwordBox.PasswordChar = '*';
             passwordBox.PlaceholderText = "";
             passwordBox.SelectedText = "";
             passwordBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            passwordBox.Size = new Size(731, 104);
+            passwordBox.Size = new Size(341, 42);
             passwordBox.TabIndex = 25;
+            passwordBox.TextChanged += passwordBox_TextChanged;
             // 
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
             guna2Transition1.SetDecoration(label8, Guna.UI2.AnimatorNS.DecorationType.None);
-            label8.Font = new Font("Andalus", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(167, 608);
-            label8.Margin = new Padding(9, 0, 9, 0);
+            label8.Font = new Font("Cooper Black", 24F, FontStyle.Italic);
+            label8.Location = new Point(91, 225);
+            label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(342, 110);
+            label8.Size = new Size(184, 36);
             label8.TabIndex = 24;
             label8.Text = "Password:";
+            label8.Click += label8_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
             guna2Transition1.SetDecoration(label9, Guna.UI2.AnimatorNS.DecorationType.None);
-            label9.Font = new Font("Andalus", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(167, 181);
-            label9.Margin = new Padding(9, 0, 9, 0);
+            label9.Font = new Font("Cooper Black", 24F, FontStyle.Italic);
+            label9.Location = new Point(88, 55);
+            label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(309, 93);
+            label9.Size = new Size(187, 36);
             label9.TabIndex = 23;
             label9.Text = "Username:";
+            label9.Click += label9_Click;
             // 
             // usernameBox
             // 
             usernameBox.Animated = true;
+            usernameBox.BackColor = Color.Transparent;
             usernameBox.BorderRadius = 10;
             usernameBox.BorderThickness = 2;
             usernameBox.CustomizableEdges = customizableEdges3;
@@ -188,19 +199,20 @@
             usernameBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             usernameBox.ForeColor = Color.Black;
             usernameBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            usernameBox.Location = new Point(189, 319);
-            usernameBox.Margin = new Padding(11, 15, 11, 15);
+            usernameBox.Location = new Point(88, 97);
+            usernameBox.Margin = new Padding(5, 6, 5, 6);
             usernameBox.Name = "usernameBox";
             usernameBox.PasswordChar = '\0';
             usernameBox.PlaceholderText = "";
             usernameBox.SelectedText = "";
             usernameBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            usernameBox.Size = new Size(731, 109);
+            usernameBox.Size = new Size(341, 44);
             usernameBox.TabIndex = 22;
             // 
             // emailBox
             // 
             emailBox.Animated = true;
+            emailBox.BackColor = Color.Transparent;
             emailBox.BorderRadius = 10;
             emailBox.BorderThickness = 2;
             emailBox.CustomizableEdges = customizableEdges5;
@@ -214,19 +226,20 @@
             emailBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             emailBox.ForeColor = Color.Black;
             emailBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            emailBox.Location = new Point(189, 1138);
-            emailBox.Margin = new Padding(11, 15, 11, 15);
+            emailBox.Location = new Point(92, 454);
+            emailBox.Margin = new Padding(5, 6, 5, 6);
             emailBox.Name = "emailBox";
             emailBox.PasswordChar = '\0';
             emailBox.PlaceholderText = "";
             emailBox.SelectedText = "";
             emailBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            emailBox.Size = new Size(731, 111);
+            emailBox.Size = new Size(341, 45);
             emailBox.TabIndex = 28;
             // 
             // idBox
             // 
             idBox.Animated = true;
+            idBox.BackColor = Color.Transparent;
             idBox.BorderRadius = 10;
             idBox.BorderThickness = 2;
             idBox.CustomizableEdges = customizableEdges7;
@@ -240,37 +253,39 @@
             idBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             idBox.ForeColor = Color.Black;
             idBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            idBox.Location = new Point(189, 1422);
-            idBox.Margin = new Padding(11, 15, 11, 15);
+            idBox.Location = new Point(92, 577);
+            idBox.Margin = new Padding(5, 6, 5, 6);
             idBox.Name = "idBox";
             idBox.PasswordChar = '\0';
             idBox.PlaceholderText = "";
             idBox.SelectedText = "";
             idBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            idBox.Size = new Size(731, 104);
+            idBox.Size = new Size(341, 42);
             idBox.TabIndex = 30;
             // 
             // label11
             // 
             label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
             guna2Transition1.SetDecoration(label11, Guna.UI2.AnimatorNS.DecorationType.None);
-            label11.Font = new Font("Andalus", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(189, 1281);
-            label11.Margin = new Padding(9, 0, 9, 0);
+            label11.Font = new Font("Cooper Black", 24F, FontStyle.Italic);
+            label11.Location = new Point(92, 517);
+            label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(135, 110);
+            label11.Size = new Size(64, 36);
             label11.TabIndex = 31;
             label11.Text = "ID:";
             // 
             // label10
             // 
             label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
             guna2Transition1.SetDecoration(label10, Guna.UI2.AnimatorNS.DecorationType.None);
-            label10.Font = new Font("Andalus", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(167, 997);
-            label10.Margin = new Padding(9, 0, 9, 0);
+            label10.Font = new Font("Cooper Black", 24F, FontStyle.Italic);
+            label10.Location = new Point(92, 401);
+            label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
-            label10.Size = new Size(229, 110);
+            label10.Size = new Size(118, 36);
             label10.TabIndex = 29;
             label10.Text = "Email:";
             // 
@@ -286,16 +301,16 @@
             RegisterButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             RegisterButton.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             RegisterButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            RegisterButton.FillColor = Color.FromArgb(255, 224, 192);
-            RegisterButton.FillColor2 = Color.RosyBrown;
-            RegisterButton.Font = new Font("Andalus", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RegisterButton.FillColor = Color.LightCyan;
+            RegisterButton.FillColor2 = Color.Ivory;
+            RegisterButton.Font = new Font("Cooper Black", 18F, FontStyle.Italic);
             RegisterButton.ForeColor = Color.Black;
             RegisterButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            RegisterButton.Location = new Point(352, 1871);
-            RegisterButton.Margin = new Padding(4, 7, 4, 7);
+            RegisterButton.Location = new Point(164, 759);
+            RegisterButton.Margin = new Padding(2, 3, 2, 3);
             RegisterButton.Name = "RegisterButton";
             RegisterButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            RegisterButton.Size = new Size(456, 168);
+            RegisterButton.Size = new Size(213, 68);
             RegisterButton.TabIndex = 32;
             RegisterButton.Text = "Register";
             RegisterButton.Click += Register_Click;
@@ -303,14 +318,16 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             guna2Transition1.SetDecoration(label1, Guna.UI2.AnimatorNS.DecorationType.None);
-            label1.Font = new Font("Andalus", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(189, 1570);
-            label1.Margin = new Padding(9, 0, 9, 0);
+            label1.Font = new Font("Cooper Black", 24F, FontStyle.Italic);
+            label1.Location = new Point(88, 636);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(258, 101);
+            label1.Size = new Size(143, 36);
             label1.TabIndex = 33;
             label1.Text = "Gender:";
+            label1.Click += label1_Click;
             // 
             // closeButton
             // 
@@ -325,12 +342,12 @@
             closeButton.FillColor = Color.Red;
             closeButton.Font = new Font("Poor Richard", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(1196, 32);
-            closeButton.Margin = new Padding(4, 7, 4, 7);
+            closeButton.Location = new Point(514, 2);
+            closeButton.Margin = new Padding(2, 3, 2, 3);
             closeButton.Name = "closeButton";
             closeButton.ShadowDecoration.CustomizableEdges = customizableEdges11;
             closeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            closeButton.Size = new Size(79, 101);
+            closeButton.Size = new Size(37, 41);
             closeButton.TabIndex = 34;
             closeButton.Text = "X";
             closeButton.TextOffset = new Point(1, 0);
@@ -360,18 +377,18 @@
             // 
             // iconButton1
             // 
-            iconButton1.BackColor = Color.RosyBrown;
-            guna2Transition1.SetDecoration(iconButton1, Guna.UI2.AnimatorNS.DecorationType.BottomMirror);
+            iconButton1.BackColor = Color.Transparent;
+            guna2Transition1.SetDecoration(iconButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             iconButton1.DialogResult = DialogResult.OK;
             iconButton1.FlatAppearance.BorderColor = Color.RosyBrown;
             iconButton1.FlatStyle = FlatStyle.Flat;
             iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
             iconButton1.IconColor = Color.Navy;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(17, 32);
+            iconButton1.Location = new Point(9, 9);
             iconButton1.Margin = new Padding(0);
             iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(107, 128);
+            iconButton1.Size = new Size(50, 52);
             iconButton1.TabIndex = 35;
             iconButton1.UseVisualStyleBackColor = false;
             iconButton1.Click += iconButton1_Click;
@@ -379,6 +396,7 @@
             // ShowButton
             // 
             ShowButton.AnimatedGIF = true;
+            ShowButton.BackColor = Color.Transparent;
             ShowButton.CheckedState.ImageSize = new Size(64, 64);
             guna2Transition1.SetDecoration(ShowButton, Guna.UI2.AnimatorNS.DecorationType.None);
             ShowButton.HoverState.ImageSize = new Size(70, 30);
@@ -386,12 +404,12 @@
             ShowButton.ImageOffset = new Point(0, 0);
             ShowButton.ImageRotate = 0F;
             ShowButton.ImageSize = new Size(70, 30);
-            ShowButton.Location = new Point(935, 751);
-            ShowButton.Margin = new Padding(4, 7, 4, 7);
+            ShowButton.Location = new Point(436, 297);
+            ShowButton.Margin = new Padding(2, 3, 2, 3);
             ShowButton.Name = "ShowButton";
             ShowButton.PressedState.ImageSize = new Size(70, 30);
             ShowButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            ShowButton.Size = new Size(137, 74);
+            ShowButton.Size = new Size(64, 30);
             ShowButton.TabIndex = 27;
             ShowButton.Click += showButton_Click;
             // 
@@ -405,12 +423,12 @@
             HideButton.ImageOffset = new Point(0, 0);
             HideButton.ImageRotate = 0F;
             HideButton.ImageSize = new Size(70, 30);
-            HideButton.Location = new Point(935, 751);
-            HideButton.Margin = new Padding(4, 7, 4, 7);
+            HideButton.Location = new Point(436, 297);
+            HideButton.Margin = new Padding(2, 3, 2, 3);
             HideButton.Name = "HideButton";
             HideButton.PressedState.ImageSize = new Size(70, 30);
             HideButton.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            HideButton.Size = new Size(137, 74);
+            HideButton.Size = new Size(64, 30);
             HideButton.TabIndex = 26;
             HideButton.Click += hideButton_Click;
             // 
@@ -457,10 +475,11 @@
             // 
             // RegisterForm
             // 
-            AutoScaleDimensions = new SizeF(15F, 37F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.RosyBrown;
-            ClientSize = new Size(1301, 2171);
+            BackColor = Color.White;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(557, 869);
             Controls.Add(iconButton1);
             Controls.Add(closeButton);
             Controls.Add(label1);
@@ -483,7 +502,7 @@
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(4, 7, 4, 7);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "RegisterForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RegisterForm";

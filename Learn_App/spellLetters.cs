@@ -106,5 +106,15 @@ namespace WinFormsApp2
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
+
+        private void spellLetters_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

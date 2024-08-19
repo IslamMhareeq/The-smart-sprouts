@@ -19,7 +19,7 @@ namespace Learn_App.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,47 @@ namespace Learn_App.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8980091 {
+            get {
+                object obj = ResourceManager.GetObject("8980091", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_simple_father_kid_grass_learning_bicycle_background_picture_image_1000095 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-simple-father-kid-grass-learning-bicycle-background-picture-image_1000095" +
+                        "", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_08_19_at_14_19_57_8329f6d7 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-08-19 at 14.19.57_8329f6d7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_08_19_at_14_28_18_1225e67a {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-08-19 at 14.28.18_1225e67a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
