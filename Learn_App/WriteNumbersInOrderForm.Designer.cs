@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WriteNumbersInOrderForm));
             lblInstruction = new Label();
             txtNumbers = new TextBox();
             btnSubmit = new Button();
@@ -42,38 +41,38 @@
             // lblInstruction
             // 
             lblInstruction.AutoSize = true;
-            lblInstruction.BackColor = SystemColors.ActiveCaptionText;
-            lblInstruction.Font = new Font("Stencil", 13F);
-            lblInstruction.ForeColor = SystemColors.ButtonHighlight;
-            lblInstruction.Location = new Point(35, 95);
-            lblInstruction.Margin = new Padding(5, 0, 5, 0);
+            lblInstruction.BackColor = Color.White;
+            lblInstruction.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblInstruction.ForeColor = Color.Black;
+            lblInstruction.Location = new Point(60, 156);
+            lblInstruction.Margin = new Padding(8, 0, 8, 0);
             lblInstruction.Name = "lblInstruction";
-            lblInstruction.Size = new Size(592, 31);
+            lblInstruction.Size = new Size(688, 48);
             lblInstruction.TabIndex = 0;
             lblInstruction.Text = "Arrange the numbers in ascending order:";
             lblInstruction.Click += lblInstruction_Click;
             // 
             // txtNumbers
             // 
-            txtNumbers.BackColor = SystemColors.WindowText;
-            txtNumbers.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNumbers.ForeColor = SystemColors.Window;
-            txtNumbers.Location = new Point(169, 255);
-            txtNumbers.Margin = new Padding(5, 5, 5, 5);
+            txtNumbers.BackColor = Color.White;
+            txtNumbers.Font = new Font("Microsoft Sans Serif", 12F);
+            txtNumbers.ForeColor = Color.Black;
+            txtNumbers.Location = new Point(216, 455);
+            txtNumbers.Margin = new Padding(8);
             txtNumbers.Name = "txtNumbers";
-            txtNumbers.Size = new Size(612, 41);
+            txtNumbers.Size = new Size(1038, 53);
             txtNumbers.TabIndex = 1;
             txtNumbers.TextChanged += txtNumbers_TextChanged;
             // 
             // btnSubmit
             // 
-            btnSubmit.BackColor = Color.Black;
-            btnSubmit.Font = new Font("Stencil", 14F);
-            btnSubmit.ForeColor = Color.White;
-            btnSubmit.Location = new Point(256, 393);
-            btnSubmit.Margin = new Padding(5, 5, 5, 5);
+            btnSubmit.BackColor = Color.White;
+            btnSubmit.Font = new Font("Stencil", 12F);
+            btnSubmit.ForeColor = Color.Black;
+            btnSubmit.Location = new Point(531, 690);
+            btnSubmit.Margin = new Padding(8);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(142, 45);
+            btnSubmit.Size = new Size(241, 74);
             btnSubmit.TabIndex = 2;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = false;
@@ -83,64 +82,63 @@
             // 
             trfl.BackColor = Color.White;
             trfl.Font = new Font("Stencil", 14F);
-            trfl.Location = new Point(411, 402);
-            trfl.Margin = new Padding(2);
+            trfl.Location = new Point(795, 704);
             trfl.Name = "trfl";
-            trfl.Size = new Size(47, 36);
+            trfl.Size = new Size(80, 59);
             trfl.TabIndex = 7;
             trfl.UseVisualStyleBackColor = false;
             trfl.Click += trfl_Click;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ButtonShadow;
+            panel1.BackColor = Color.LightCyan;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label6);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1883, 63);
+            panel1.Size = new Size(1447, 103);
             panel1.TabIndex = 11;
             panel1.Paint += panel1_Paint;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Viner Hand ITC", 18F);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(418, 1);
+            label1.Font = new Font("Cooper Black", 18F);
+            label1.Location = new Point(428, 17);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(202, 58);
-            label1.TabIndex = 7;
-            label1.Text = "Learn App";
+            label1.Size = new Size(591, 69);
+            label1.TabIndex = 4;
+            label1.Text = "The smart sprouts";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Viner Hand ITC", 16F);
-            label6.Location = new Point(6, 5);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Font = new Font("Cooper Black", 18F);
+            label6.Location = new Point(10, 8);
             label6.Name = "label6";
-            label6.Size = new Size(102, 52);
+            label6.Size = new Size(183, 69);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
             // WriteNumbersInOrderForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1883, 1039);
+            BackgroundImage = Properties.Resources.صورة_واتساب_بتاريخ_2024_08_19_في_19_59_22_a5049653;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1447, 1514);
             Controls.Add(panel1);
             Controls.Add(trfl);
             Controls.Add(btnSubmit);
             Controls.Add(txtNumbers);
             Controls.Add(lblInstruction);
-            Margin = new Padding(5, 5, 5, 5);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(8);
             Name = "WriteNumbersInOrderForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Write Numbers in Order";
             Load += WriteNumbersInOrderForm_Load;
             panel1.ResumeLayout(false);

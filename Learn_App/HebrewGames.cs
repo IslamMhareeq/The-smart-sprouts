@@ -21,25 +21,28 @@ namespace Learn_App
             this.userManager = userManager;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+
+        private void label6_Click(object sender, EventArgs e)
         {
+            var form = new MainPage(currentUser, userManager);
+            this.Hide();
+            form.Show();
+            form.FormClosed += (s, args) => this.Close();
+        }
+
+        private void letterOrder_Click(object sender, EventArgs e)
+        {
+
             var form = new MatchLetterHeb(currentUser, userManager);
             this.Hide();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void letterMatch_Click(object sender, EventArgs e)
         {
             var form = new Hebrew(currentUser, userManager);
-            this.Hide();
-            form.Show();
-            form.FormClosed += (s, args) => this.Close();
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-            var form = new MainPage(currentUser, userManager);
             this.Hide();
             form.Show();
             form.FormClosed += (s, args) => this.Close();

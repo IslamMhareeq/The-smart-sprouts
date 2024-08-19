@@ -22,7 +22,6 @@ namespace Learn_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdditionForm));
             lblQuestion = new Label();
             txtAnswer = new TextBox();
             btnSubmit = new Button();
@@ -36,36 +35,36 @@ namespace Learn_App
             // lblQuestion
             // 
             lblQuestion.AutoSize = true;
-            lblQuestion.BackColor = Color.Black;
+            lblQuestion.BackColor = Color.White;
             lblQuestion.Font = new Font("Stencil", 13.875F);
-            lblQuestion.ForeColor = Color.White;
-            lblQuestion.Location = new Point(181, 269);
-            lblQuestion.Margin = new Padding(8, 0, 8, 0);
+            lblQuestion.ForeColor = Color.Black;
+            lblQuestion.Location = new Point(434, 351);
+            lblQuestion.Margin = new Padding(10, 0, 10, 0);
             lblQuestion.Name = "lblQuestion";
-            lblQuestion.Size = new Size(0, 44);
+            lblQuestion.Size = new Size(0, 56);
             lblQuestion.TabIndex = 0;
             // 
             // txtAnswer
             // 
-            txtAnswer.BackColor = Color.Black;
+            txtAnswer.BackColor = Color.White;
             txtAnswer.Font = new Font("Stencil", 13.875F);
-            txtAnswer.ForeColor = Color.White;
-            txtAnswer.Location = new Point(148, 377);
-            txtAnswer.Margin = new Padding(8, 6, 8, 6);
+            txtAnswer.ForeColor = Color.Black;
+            txtAnswer.Location = new Point(428, 495);
+            txtAnswer.Margin = new Padding(10, 8, 10, 8);
             txtAnswer.Name = "txtAnswer";
-            txtAnswer.Size = new Size(279, 51);
+            txtAnswer.Size = new Size(533, 62);
             txtAnswer.TabIndex = 1;
             txtAnswer.TextChanged += txtAnswer_TextChanged;
             // 
             // btnSubmit
             // 
-            btnSubmit.BackColor = Color.Black;
+            btnSubmit.BackColor = Color.White;
             btnSubmit.Font = new Font("Stencil", 13.875F);
-            btnSubmit.ForeColor = Color.White;
-            btnSubmit.Location = new Point(148, 451);
-            btnSubmit.Margin = new Padding(8, 6, 8, 6);
+            btnSubmit.ForeColor = Color.Black;
+            btnSubmit.Location = new Point(515, 703);
+            btnSubmit.Margin = new Padding(10, 8, 10, 8);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(231, 79);
+            btnSubmit.Size = new Size(302, 101);
             btnSubmit.TabIndex = 2;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = false;
@@ -74,62 +73,60 @@ namespace Learn_App
             // trfl
             // 
             trfl.BackColor = Color.White;
-            trfl.Location = new Point(388, 483);
-            trfl.Margin = new Padding(2);
+            trfl.Location = new Point(828, 744);
             trfl.Name = "trfl";
-            trfl.Size = new Size(39, 47);
+            trfl.Size = new Size(51, 60);
             trfl.TabIndex = 3;
             trfl.UseVisualStyleBackColor = false;
             trfl.Click += trfl_Click;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ButtonShadow;
+            panel1.BackColor = Color.LightCyan;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label6);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(908, 79);
+            panel1.Size = new Size(1447, 101);
             panel1.TabIndex = 10;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Viner Hand ITC", 18F);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(319, 0);
+            label1.Font = new Font("Cooper Black", 18F);
+            label1.Location = new Point(428, 16);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(270, 78);
-            label1.TabIndex = 6;
-            label1.Text = "Learn App";
+            label1.Size = new Size(591, 69);
+            label1.TabIndex = 4;
+            label1.Text = "The smart sprouts";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Viner Hand ITC", 15F);
-            label6.Location = new Point(8, 6);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Font = new Font("Cooper Black", 18F);
+            label6.Location = new Point(10, 8);
             label6.Name = "label6";
-            label6.Size = new Size(129, 65);
+            label6.Size = new Size(183, 69);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
             // AdditionForm
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(908, 989);
+            BackgroundImage = Properties.Resources.صورة_واتساب_بتاريخ_2024_08_19_في_19_59_22_a5049653;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1447, 1514);
             Controls.Add(panel1);
             Controls.Add(trfl);
             Controls.Add(btnSubmit);
             Controls.Add(txtAnswer);
             Controls.Add(lblQuestion);
-            Margin = new Padding(8, 6, 8, 6);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(10, 8, 10, 8);
             Name = "AdditionForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Addition";

@@ -40,13 +40,13 @@
             // 
             // gamePanel
             // 
-            gamePanel.BackColor = Color.FromArgb(192, 255, 192);
+            gamePanel.BackColor = Color.LightCyan;
             gamePanel.Controls.Add(lblCharacter);
             gamePanel.Dock = DockStyle.Top;
             gamePanel.Location = new Point(0, 0);
             gamePanel.Margin = new Padding(6);
             gamePanel.Name = "gamePanel";
-            gamePanel.Size = new Size(1955, 631);
+            gamePanel.Size = new Size(1503, 670);
             gamePanel.TabIndex = 0;
             gamePanel.Paint += panel1_Paint;
             // 
@@ -64,7 +64,7 @@
             // 
             btnStart.BackColor = Color.FromArgb(255, 224, 192);
             btnStart.Font = new Font("Segoe UI", 12F);
-            btnStart.Location = new Point(26, 644);
+            btnStart.Location = new Point(263, 692);
             btnStart.Margin = new Padding(6);
             btnStart.Name = "btnStart";
             btnStart.Size = new Size(236, 100);
@@ -77,7 +77,7 @@
             // 
             btnClose.BackColor = Color.FromArgb(255, 224, 192);
             btnClose.Font = new Font("Segoe UI", 12F);
-            btnClose.Location = new Point(274, 644);
+            btnClose.Location = new Point(15, 692);
             btnClose.Margin = new Padding(6);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(236, 100);
@@ -90,7 +90,7 @@
             // 
             lblScore.AutoSize = true;
             lblScore.Font = new Font("Segoe UI", 12F);
-            lblScore.Location = new Point(552, 667);
+            lblScore.Location = new Point(535, 715);
             lblScore.Margin = new Padding(6, 0, 6, 0);
             lblScore.Name = "lblScore";
             lblScore.Size = new Size(120, 54);
@@ -107,14 +107,16 @@
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1955, 800);
+            ClientSize = new Size(1503, 819);
             Controls.Add(lblScore);
-            Controls.Add(btnClose);
             Controls.Add(btnStart);
+            Controls.Add(btnClose);
             Controls.Add(gamePanel);
+            FormBorderStyle = FormBorderStyle.None;
             KeyPreview = true;
             Margin = new Padding(6);
             Name = "MatchLetterHeb";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             KeyPress += Form1_KeyPress;
             gamePanel.ResumeLayout(false);

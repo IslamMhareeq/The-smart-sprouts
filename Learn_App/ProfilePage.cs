@@ -19,10 +19,12 @@ namespace Learn_App
 
         private void DisplayUserName()
         {
-            label1.Text = $"Your Username: {currentUser.Username}!";
-            label2.Text = $"Your points: {currentUser.Points}";
-            label3.Text = $"Your email: {currentUser.Email}";
-            label4.Text = $"Your password: {currentUser.Password}";
+            label1.Text = $"Username: {currentUser.Username}";
+            label8.Text = $"Points: {currentUser.Points}";
+            label3.Text = $"Email: {currentUser.Email}";
+            label7.Text = $"Password: {currentUser.Password}";
+            label2.Text = $"ID: {currentUser.ID}";
+            label4.Text = $"Gender: {currentUser.Gender}";
         }
 
         private void DisplayPurchasedItems()

@@ -29,7 +29,6 @@ namespace Learn_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MathGames));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -50,10 +49,10 @@ namespace Learn_App
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Arial", 13F, FontStyle.Bold);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(139, 196);
-            button1.Margin = new Padding(8, 6, 8, 6);
+            button1.Location = new Point(455, 363);
+            button1.Margin = new Padding(10, 8, 10, 8);
             button1.Name = "button1";
-            button1.Size = new Size(432, 124);
+            button1.Size = new Size(565, 159);
             button1.TabIndex = 0;
             button1.Text = "a. Write numbers in order";
             button1.UseVisualStyleBackColor = false;
@@ -69,10 +68,10 @@ namespace Learn_App
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Arial", 13F, FontStyle.Bold);
             button2.ForeColor = Color.Black;
-            button2.Location = new Point(139, 342);
-            button2.Margin = new Padding(8, 6, 8, 6);
+            button2.Location = new Point(455, 550);
+            button2.Margin = new Padding(10, 8, 10, 8);
             button2.Name = "button2";
-            button2.Size = new Size(432, 124);
+            button2.Size = new Size(565, 159);
             button2.TabIndex = 1;
             button2.Text = "b. Complete sequences";
             button2.UseVisualStyleBackColor = false;
@@ -88,10 +87,10 @@ namespace Learn_App
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Arial", 13F, FontStyle.Bold);
             button3.ForeColor = Color.Black;
-            button3.Location = new Point(139, 486);
-            button3.Margin = new Padding(8, 6, 8, 6);
+            button3.Location = new Point(455, 735);
+            button3.Margin = new Padding(10, 8, 10, 8);
             button3.Name = "button3";
-            button3.Size = new Size(432, 124);
+            button3.Size = new Size(565, 159);
             button3.TabIndex = 2;
             button3.Text = "c. Addition";
             button3.UseVisualStyleBackColor = false;
@@ -107,10 +106,10 @@ namespace Learn_App
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Arial", 13F, FontStyle.Bold);
             button4.ForeColor = Color.Black;
-            button4.Location = new Point(139, 631);
-            button4.Margin = new Padding(8, 6, 8, 6);
+            button4.Location = new Point(455, 920);
+            button4.Margin = new Padding(10, 8, 10, 8);
             button4.Name = "button4";
-            button4.Size = new Size(432, 124);
+            button4.Size = new Size(565, 159);
             button4.TabIndex = 3;
             button4.Text = "d. Subtraction";
             button4.UseVisualStyleBackColor = false;
@@ -126,10 +125,10 @@ namespace Learn_App
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Arial", 13F, FontStyle.Bold);
             button5.ForeColor = Color.Black;
-            button5.Location = new Point(139, 777);
-            button5.Margin = new Padding(8, 6, 8, 6);
+            button5.Location = new Point(455, 1108);
+            button5.Margin = new Padding(10, 8, 10, 8);
             button5.Name = "button5";
-            button5.Size = new Size(432, 124);
+            button5.Size = new Size(565, 159);
             button5.TabIndex = 4;
             button5.Text = "e. Multiplication";
             button5.UseVisualStyleBackColor = false;
@@ -140,58 +139,57 @@ namespace Learn_App
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Stencil", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(126, 124);
-            label1.Margin = new Padding(8, 0, 8, 0);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Stencil", 17F);
+            label1.Location = new Point(423, 255);
+            label1.Margin = new Padding(10, 0, 10, 0);
             label1.Name = "label1";
-            label1.Size = new Size(450, 47);
+            label1.Size = new Size(642, 68);
             label1.TabIndex = 6;
             label1.Text = "Choose a Math Game:";
             label1.Click += label1_Click_1;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ButtonShadow;
+            panel1.BackColor = Color.LightCyan;
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label6);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(825, 78);
+            panel1.Size = new Size(1479, 100);
             panel1.TabIndex = 9;
             panel1.Paint += panel1_Paint;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Viner Hand ITC", 18F);
+            label2.Font = new Font("Cooper Black", 18F);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(281, -2);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(455, 9);
             label2.Name = "label2";
-            label2.Size = new Size(270, 78);
+            label2.Size = new Size(591, 69);
             label2.TabIndex = 6;
-            label2.Text = "Learn App";
+            label2.Text = "The smart sprouts";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Viner Hand ITC", 15F);
-            label6.Location = new Point(8, 6);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Font = new Font("Cooper Black", 18F);
+            label6.Location = new Point(10, 8);
             label6.Name = "label6";
-            label6.Size = new Size(129, 65);
+            label6.Size = new Size(183, 69);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
             // MathGames
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(825, 1195);
+            BackgroundImage = Properties.Resources.صورة_واتساب_بتاريخ_2024_08_19_في_19_59_22_a5049653;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1479, 1602);
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(button2);
@@ -199,7 +197,8 @@ namespace Learn_App
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button1);
-            Margin = new Padding(8, 6, 8, 6);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(10, 8, 10, 8);
             Name = "MathGames";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Math Games App";

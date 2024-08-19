@@ -73,6 +73,16 @@ namespace Learn_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Hebrew {
+            get {
+                object obj = ResourceManager.GetObject("Hebrew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_simple_father_kid_grass_learning_bicycle_background_picture_image_1000095 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-simple-father-kid-grass-learning-bicycle-background-picture-image_1000095" +
@@ -97,6 +107,16 @@ namespace Learn_App.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2024_08_19_at_14_28_18_1225e67a {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2024-08-19 at 14.28.18_1225e67a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap صورة_واتساب_بتاريخ_2024_08_19_في_19_59_22_a5049653 {
+            get {
+                object obj = ResourceManager.GetObject("صورة واتساب بتاريخ 2024-08-19 في 19.59.22_a5049653", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

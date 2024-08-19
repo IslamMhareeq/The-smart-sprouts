@@ -20,10 +20,10 @@ namespace Learn_App
             // 
             label_word.BackColor = Color.LightBlue;
             label_word.Font = new Font("Segoe MDL2 Assets", 24F);
-            label_word.Location = new Point(49, 105);
-            label_word.Margin = new Padding(5, 0, 5, 0);
+            label_word.Location = new Point(311, 269);
+            label_word.Margin = new Padding(7, 0, 7, 0);
             label_word.Name = "label_word";
-            label_word.Size = new Size(628, 138);
+            label_word.Size = new Size(821, 177);
             label_word.TabIndex = 0;
             label_word.Text = "המילה";
             label_word.TextAlign = ContentAlignment.MiddleCenter;
@@ -33,10 +33,10 @@ namespace Learn_App
             // 
             textBox1_Guess.BackColor = Color.White;
             textBox1_Guess.Font = new Font("Segoe UI", 18F);
-            textBox1_Guess.Location = new Point(49, 237);
-            textBox1_Guess.Margin = new Padding(5, 4, 5, 4);
+            textBox1_Guess.Location = new Point(311, 438);
+            textBox1_Guess.Margin = new Padding(7, 5, 7, 5);
             textBox1_Guess.Name = "textBox1_Guess";
-            textBox1_Guess.Size = new Size(625, 71);
+            textBox1_Guess.Size = new Size(816, 87);
             textBox1_Guess.TabIndex = 1;
             textBox1_Guess.TextAlign = HorizontalAlignment.Center;
             textBox1_Guess.TextChanged += textBox1_Guess_TextChanged;
@@ -48,10 +48,10 @@ namespace Learn_App
             button1_next.FlatAppearance.BorderColor = Color.Black;
             button1_next.FlatStyle = FlatStyle.Flat;
             button1_next.Font = new Font("Segoe UI", 18F);
-            button1_next.Location = new Point(49, 348);
-            button1_next.Margin = new Padding(5, 4, 5, 4);
+            button1_next.Location = new Point(311, 580);
+            button1_next.Margin = new Padding(7, 5, 7, 5);
             button1_next.Name = "button1_next";
-            button1_next.Size = new Size(628, 134);
+            button1_next.Size = new Size(821, 172);
             button1_next.TabIndex = 2;
             button1_next.Text = "הבא";
             button1_next.UseVisualStyleBackColor = false;
@@ -63,10 +63,10 @@ namespace Learn_App
             button2_start.FlatAppearance.BorderColor = Color.Black;
             button2_start.FlatStyle = FlatStyle.Flat;
             button2_start.Font = new Font("Segoe UI", 18F);
-            button2_start.Location = new Point(49, 484);
-            button2_start.Margin = new Padding(5, 4, 5, 4);
+            button2_start.Location = new Point(311, 754);
+            button2_start.Margin = new Padding(7, 5, 7, 5);
             button2_start.Name = "button2_start";
-            button2_start.Size = new Size(628, 134);
+            button2_start.Size = new Size(821, 172);
             button2_start.TabIndex = 3;
             button2_start.Text = "התחלה";
             button2_start.UseVisualStyleBackColor = false;
@@ -77,10 +77,10 @@ namespace Learn_App
             label_result.BackColor = SystemColors.ActiveCaption;
             label_result.Font = new Font("Segoe MDL2 Assets", 24F);
             label_result.ImageAlign = ContentAlignment.MiddleRight;
-            label_result.Location = new Point(49, 638);
-            label_result.Margin = new Padding(5, 0, 5, 0);
+            label_result.Location = new Point(311, 951);
+            label_result.Margin = new Padding(7, 0, 7, 0);
             label_result.Name = "label_result";
-            label_result.Size = new Size(628, 138);
+            label_result.Size = new Size(821, 177);
             label_result.TabIndex = 4;
             label_result.Text = "תוצאה";
             label_result.TextAlign = ContentAlignment.TopCenter;
@@ -90,55 +90,54 @@ namespace Learn_App
             // 
             label_score.AutoSize = true;
             label_score.Font = new Font("Segoe UI", 13.8F);
-            label_score.Location = new Point(325, 785);
-            label_score.Margin = new Padding(5, 0, 5, 0);
+            label_score.Location = new Point(672, 1140);
+            label_score.Margin = new Padding(7, 0, 7, 0);
             label_score.Name = "label_score";
-            label_score.Size = new Size(62, 50);
+            label_score.Size = new Size(77, 62);
             label_score.TabIndex = 5;
             label_score.Text = "00";
             label_score.Click += label_score_Click;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ButtonShadow;
+            panel1.BackColor = Color.LightCyan;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label6);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(788, 87);
+            panel1.Size = new Size(1447, 111);
             panel1.TabIndex = 11;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Viner Hand ITC", 18F);
+            label1.Font = new Font("Cooper Black", 18F);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(325, 0);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(428, 19);
             label1.Name = "label1";
-            label1.Size = new Size(270, 78);
+            label1.Size = new Size(591, 69);
             label1.TabIndex = 5;
-            label1.Text = "Learn App";
+            label1.Text = "The smart sprouts";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Viner Hand ITC", 15F);
-            label6.Location = new Point(8, 6);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Font = new Font("Cooper Black", 18F);
+            label6.Location = new Point(12, 19);
             label6.Name = "label6";
-            label6.Size = new Size(129, 65);
+            label6.Size = new Size(183, 69);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click_1;
             // 
             // Hebrew
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(788, 1006);
+            BackgroundImage = Properties.Resources.WhatsApp_Image_2024_08_19_at_14_28_18_1225e67a;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1447, 1514);
             Controls.Add(panel1);
             Controls.Add(label_score);
             Controls.Add(label_result);
@@ -146,7 +145,8 @@ namespace Learn_App
             Controls.Add(button1_next);
             Controls.Add(textBox1_Guess);
             Controls.Add(label_word);
-            Margin = new Padding(5, 4, 5, 4);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(7, 5, 7, 5);
             Name = "Hebrew";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Hebrew Learning Game";
