@@ -52,7 +52,7 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(142, 80);
+            label1.Location = new Point(193, 85);
             label1.Name = "label1";
             label1.Size = new Size(270, 45);
             label1.TabIndex = 25;
@@ -61,7 +61,7 @@
             // submitButton
             // 
             submitButton.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            submitButton.Location = new Point(178, 619);
+            submitButton.Location = new Point(169, 595);
             submitButton.Name = "submitButton";
             submitButton.Size = new Size(226, 67);
             submitButton.TabIndex = 26;
@@ -72,7 +72,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(476, 81);
+            button2.Location = new Point(520, 86);
             button2.Name = "button2";
             button2.Size = new Size(107, 44);
             button2.TabIndex = 27;
@@ -83,7 +83,7 @@
             // aLetter
             // 
             aLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            aLetter.Location = new Point(332, 450);
+            aLetter.Location = new Point(403, 450);
             aLetter.Name = "aLetter";
             aLetter.Size = new Size(180, 124);
             aLetter.TabIndex = 29;
@@ -103,7 +103,7 @@
             // cLetter
             // 
             cLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cLetter.Location = new Point(332, 292);
+            cLetter.Location = new Point(403, 292);
             cLetter.Name = "cLetter";
             cLetter.Size = new Size(180, 124);
             cLetter.TabIndex = 31;
@@ -133,10 +133,11 @@
             // 
             panel1.BackColor = SystemColors.ControlLightLight;
             panel1.Controls.Add(questionLetter);
-            panel1.Location = new Point(184, 153);
+            panel1.Location = new Point(226, 161);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 100);
+            panel1.Size = new Size(186, 98);
             panel1.TabIndex = 34;
+            panel1.Paint += panel1_Paint;
             // 
             // guna2MessageDialog1
             // 
@@ -200,7 +201,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             BackgroundImage = Learn_App.Properties.Resources.WhatsApp_Image_2024_08_19_at_14_28_18_1225e67a;
-            BackgroundImageLayout = ImageLayout.Zoom;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(660, 698);
             Controls.Add(panel2);
             Controls.Add(panel1);
