@@ -127,7 +127,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 15F);
-            label2.Location = new Point(1234, 19);
+            label2.Location = new Point(1234, 23);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(234, 62);
@@ -150,11 +150,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Snap ITC", 15F, FontStyle.Italic);
-            label1.Location = new Point(67, 19);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Snap ITC", 18F, FontStyle.Italic);
+            label1.Location = new Point(67, 10);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(164, 64);
+            label1.Size = new Size(198, 77);
             label1.TabIndex = 1;
             label1.Text = "menu";
             label1.Click += label1_Click;
@@ -164,7 +165,7 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(31, 37);
+            pictureBox1.Location = new Point(31, 43);
             pictureBox1.Margin = new Padding(2, 3, 2, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(32, 32);
@@ -194,18 +195,18 @@
             panel2.Location = new Point(2, 3);
             panel2.Margin = new Padding(2, 3, 2, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(304, 391);
+            panel2.Size = new Size(338, 391);
             panel2.TabIndex = 10;
             panel2.Paint += panel2_Paint;
             // 
             // Main
             // 
             Main.AutoSize = true;
-            Main.Font = new Font("Showcard Gothic", 9F);
-            Main.Location = new Point(56, 243);
+            Main.Font = new Font("Showcard Gothic", 14F);
+            Main.Location = new Point(29, 264);
             Main.Margin = new Padding(2, 0, 2, 0);
             Main.Name = "Main";
-            Main.Size = new Size(173, 37);
+            Main.Size = new Size(268, 59);
             Main.TabIndex = 12;
             Main.Text = "Main Page";
             Main.Click += label4_Click;
@@ -213,11 +214,11 @@
             // Store
             // 
             Store.AutoSize = true;
-            Store.Font = new Font("Showcard Gothic", 9F);
-            Store.Location = new Point(56, 145);
+            Store.Font = new Font("Showcard Gothic", 14F);
+            Store.Location = new Point(29, 166);
             Store.Margin = new Padding(2, 0, 2, 0);
             Store.Name = "Store";
-            Store.Size = new Size(111, 37);
+            Store.Size = new Size(169, 59);
             Store.TabIndex = 11;
             Store.Text = "Store";
             Store.Click += label3_Click;
@@ -225,11 +226,11 @@
             // Prof
             // 
             Prof.AutoSize = true;
-            Prof.Font = new Font("Showcard Gothic", 9F);
-            Prof.Location = new Point(56, 49);
+            Prof.Font = new Font("Showcard Gothic", 14F);
+            Prof.Location = new Point(29, 70);
             Prof.Margin = new Padding(2, 0, 2, 0);
             Prof.Name = "Prof";
-            Prof.Size = new Size(140, 37);
+            Prof.Size = new Size(216, 59);
             Prof.TabIndex = 10;
             Prof.Text = "Profile";
             Prof.Click += label2_Click;

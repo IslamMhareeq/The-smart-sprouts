@@ -93,7 +93,7 @@ namespace Learn_App
             else
             {
                 flowLayoutPanel1.Width += 10;
-                if (flowLayoutPanel1.Width >= 322)
+                if (flowLayoutPanel1.Width >= 360)
                 {
                     sidex = true;
                     sidebartran.Stop();
