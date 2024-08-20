@@ -41,20 +41,7 @@ namespace Learn_App
             }
         }
 
-        private void BE_Click(object sender, EventArgs e)
-        {
-            string newEmail = txtE.Text;
-            if (!string.IsNullOrEmpty(newEmail))
-            {
-                currentUser.Email = newEmail;
-                userManager.SaveAllUsers();
-                MessageBox.Show("Profile updated successfully!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Please enter a valid email.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        
 
         private void BP_Click(object sender, EventArgs e)
         {

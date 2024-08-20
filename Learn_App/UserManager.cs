@@ -118,9 +118,22 @@ namespace Learn_App
             ValidateGender(gender);
 
             // Check if user already exists
-            if (users.Any(u => u.Username == username))
+            var existingUser = users.FirstOrDefault(u => u.Username == username || u.Email == email || u.ID == id);
+
+            if (existingUser != null)
             {
-                throw new ArgumentException("Username already exists");
+                if (existingUser.Username == username)
+                {
+                    throw new ArgumentException("Username already exists");
+                }
+                if (existingUser.Email == email)
+                {
+                    throw new ArgumentException("Email already exists");
+                }
+                if (existingUser.ID == id)
+                {
+                    throw new ArgumentException("ID already exists");
+                }
             }
 
             // Save the new user
@@ -128,6 +141,7 @@ namespace Learn_App
             users.Add(newUser);
             SaveAllUsers();
         }
+
 
         private void ValidateUsername(string username)
         {

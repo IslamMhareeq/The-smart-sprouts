@@ -35,36 +35,45 @@ namespace WinFormsApp2
             {
                 try
                 {
+                    // Check if any required field is empty
                     if (string.IsNullOrEmpty(usernameBox.Text) || string.IsNullOrEmpty(passwordBox.Text) || string.IsNullOrEmpty(emailBox.Text)
-                    || string.IsNullOrEmpty(idBox.Text))
-
+                        || string.IsNullOrEmpty(idBox.Text))
                     {
                         MessageBox.Show("All info should be provided!");
                         return;
                     }
-                    String message = "";
-                    message += ExcelFunctions.checkValidity(usernameBox.Text, passwordBox.Text, emailBox.Text, idBox.Text);
 
+                    // Check validity using ExcelFunctions (assuming this checks format or other criteria)
+                    String message = ExcelFunctions.checkValidity(usernameBox.Text, passwordBox.Text, emailBox.Text, idBox.Text);
 
-                    if (message != "")
+                    if (!string.IsNullOrEmpty(message))
                     {
                         MessageBox.Show(message, "Invalid Info", MessageBoxButtons.OK);
                         return;
                     }
 
+                    // Attempt to register the user
                     userManager.RegisterUser(usernameBox.Text, passwordBox.Text, idBox.Text, emailBox.Text, maleButton.Checked ? "Male" : "Female");
+
+                    // Close the current form and open the Welcome form
                     this.Close();
                     WelcomeForm welcome = new WelcomeForm();
                     welcome.Show();
-
+                }
+                catch (ArgumentException ex)
+                {
+                    // Handle specific user registration errors like duplicate username, email, or ID
+                    MessageBox.Show(ex.Message, "Registration Error", MessageBoxButtons.OK);
                 }
                 catch (Exception ex)
                 {
+                    // Handle other exceptions (e.g., file I/O errors)
                     Console.WriteLine(ex.ToString());
                     MessageBox.Show("An error occurred while saving to Excel.");
                 }
             }
         }
+
 
         private void showButton_Click(object sender, EventArgs e)
         {

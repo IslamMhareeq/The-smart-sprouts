@@ -31,13 +31,10 @@ namespace Learn_App
         {
             changeN = new Label();
             ChangeP = new Label();
-            ChangeE = new Label();
             txtN = new TextBox();
             txtP = new TextBox();
-            txtE = new TextBox();
             BN = new Button();
             BP = new Button();
-            BE = new Button();
             panel1 = new Panel();
             label1 = new Label();
             label6 = new Label();
@@ -65,16 +62,6 @@ namespace Learn_App
             ChangeP.Text = "Change Password:";
             ChangeP.Click += label2_Click;
             // 
-            // ChangeE
-            // 
-            ChangeE.AutoSize = true;
-            ChangeE.Font = new Font("Stencil", 14F);
-            ChangeE.Location = new Point(81, 894);
-            ChangeE.Name = "ChangeE";
-            ChangeE.Size = new Size(369, 56);
-            ChangeE.TabIndex = 2;
-            ChangeE.Text = "Change Email:";
-            // 
             // txtN
             // 
             txtN.Font = new Font("Stencil", 14F);
@@ -90,14 +77,6 @@ namespace Learn_App
             txtP.Name = "txtP";
             txtP.Size = new Size(453, 63);
             txtP.TabIndex = 4;
-            // 
-            // txtE
-            // 
-            txtE.Font = new Font("Stencil", 14F);
-            txtE.Location = new Point(81, 968);
-            txtE.Name = "txtE";
-            txtE.Size = new Size(453, 63);
-            txtE.TabIndex = 5;
             // 
             // BN
             // 
@@ -120,17 +99,6 @@ namespace Learn_App
             BP.Text = "Confirm";
             BP.UseVisualStyleBackColor = true;
             BP.Click += BP_Click;
-            // 
-            // BE
-            // 
-            BE.Font = new Font("Stencil", 14F);
-            BE.Location = new Point(81, 1099);
-            BE.Name = "BE";
-            BE.Size = new Size(273, 60);
-            BE.TabIndex = 8;
-            BE.Text = "Confirm";
-            BE.UseVisualStyleBackColor = true;
-            BE.Click += BE_Click;
             // 
             // panel1
             // 
@@ -171,13 +139,10 @@ namespace Learn_App
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1479, 1602);
             Controls.Add(panel1);
-            Controls.Add(BE);
             Controls.Add(BP);
             Controls.Add(BN);
-            Controls.Add(txtE);
             Controls.Add(txtP);
             Controls.Add(txtN);
-            Controls.Add(ChangeE);
             Controls.Add(ChangeP);
             Controls.Add(changeN);
             FormBorderStyle = FormBorderStyle.None;
@@ -195,13 +160,10 @@ namespace Learn_App
 
         private System.Windows.Forms.Label changeN;
         private System.Windows.Forms.Label ChangeP;
-        private System.Windows.Forms.Label ChangeE;
         private System.Windows.Forms.TextBox txtN;
         private System.Windows.Forms.TextBox txtP;
-        private System.Windows.Forms.TextBox txtE;
         private System.Windows.Forms.Button BN;
         private System.Windows.Forms.Button BP;
-        private System.Windows.Forms.Button BE;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private Label label1;
