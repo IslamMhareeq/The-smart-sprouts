@@ -210,9 +210,9 @@
             label1.Location = new Point(272, 120);
             label1.Margin = new Padding(10, 0, 10, 0);
             label1.Name = "label1";
-            label1.Size = new Size(791, 91);
+            label1.Size = new Size(810, 91);
             label1.TabIndex = 17;
-            label1.Text = "the Smart Sprouts";
+            label1.Text = "The Smart Sprouts";
             label1.Click += label1_Click;
             // 
             // HideButton
