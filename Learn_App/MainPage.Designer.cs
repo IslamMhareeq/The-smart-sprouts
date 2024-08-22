@@ -56,10 +56,10 @@
             // 
             labelLibrary.AutoSize = true;
             labelLibrary.Font = new Font("Comic Sans MS", 24F, FontStyle.Bold);
-            labelLibrary.Location = new Point(464, 160);
-            labelLibrary.Margin = new Padding(2, 0, 2, 0);
+            labelLibrary.Location = new Point(191, 59);
+            labelLibrary.Margin = new Padding(1, 0, 1, 0);
             labelLibrary.Name = "labelLibrary";
-            labelLibrary.Size = new Size(0, 111);
+            labelLibrary.Size = new Size(0, 45);
             labelLibrary.TabIndex = 1;
             labelLibrary.TextAlign = ContentAlignment.MiddleCenter;
             labelLibrary.Click += labelLibrary_Click;
@@ -68,10 +68,10 @@
             // 
             buttonEnglish.BackColor = Color.FromArgb(0, 180, 180);
             buttonEnglish.Font = new Font("Segoe UI", 15F);
-            buttonEnglish.Location = new Point(464, 500);
-            buttonEnglish.Margin = new Padding(2, 3, 2, 3);
+            buttonEnglish.Location = new Point(191, 183);
+            buttonEnglish.Margin = new Padding(1, 1, 1, 1);
             buttonEnglish.Name = "buttonEnglish";
-            buttonEnglish.Size = new Size(510, 216);
+            buttonEnglish.Size = new Size(210, 79);
             buttonEnglish.TabIndex = 6;
             buttonEnglish.Text = "English Game";
             buttonEnglish.UseVisualStyleBackColor = false;
@@ -83,10 +83,10 @@
             // 
             button1.BackColor = Color.FromArgb(0, 180, 180);
             button1.Font = new Font("Segoe UI", 15F);
-            button1.Location = new Point(464, 781);
-            button1.Margin = new Padding(2, 3, 2, 3);
+            button1.Location = new Point(191, 286);
+            button1.Margin = new Padding(1, 1, 1, 1);
             button1.Name = "button1";
-            button1.Size = new Size(510, 216);
+            button1.Size = new Size(210, 79);
             button1.TabIndex = 6;
             button1.Text = "Math Game";
             button1.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@
             // 
             button2.BackColor = Color.FromArgb(0, 180, 180);
             button2.Font = new Font("Segoe UI", 15F);
-            button2.Location = new Point(464, 1093);
-            button2.Margin = new Padding(2, 3, 2, 3);
+            button2.Location = new Point(191, 400);
+            button2.Margin = new Padding(1, 1, 1, 1);
             button2.Name = "button2";
-            button2.Size = new Size(510, 216);
+            button2.Size = new Size(210, 79);
             button2.TabIndex = 7;
             button2.Text = "Hebrew Game";
             button2.UseVisualStyleBackColor = false;
@@ -118,19 +118,19 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2, 3, 2, 3);
+            panel1.Margin = new Padding(1, 1, 1, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1479, 108);
+            panel1.Size = new Size(609, 40);
             panel1.TabIndex = 8;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 15F);
-            label2.Location = new Point(1234, 23);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(508, 8);
+            label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(234, 62);
+            label2.Size = new Size(98, 26);
             label2.TabIndex = 4;
             label2.Text = "Log Out";
             label2.Click += label2_Click_1;
@@ -139,10 +139,10 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Cooper Black", 18F);
-            label6.Location = new Point(464, 16);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Location = new Point(191, 6);
+            label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
-            label6.Size = new Size(591, 69);
+            label6.Size = new Size(234, 27);
             label6.TabIndex = 3;
             label6.Text = "The smart sprouts";
             label6.Click += label6_Click;
@@ -152,10 +152,10 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Snap ITC", 18F, FontStyle.Italic);
-            label1.Location = new Point(67, 10);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(28, 4);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(198, 77);
+            label1.Size = new Size(80, 31);
             label1.TabIndex = 1;
             label1.Text = "menu";
             label1.Click += label1_Click;
@@ -165,8 +165,8 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(31, 43);
-            pictureBox1.Margin = new Padding(2, 3, 2, 3);
+            pictureBox1.Location = new Point(13, 16);
+            pictureBox1.Margin = new Padding(1, 1, 1, 1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(32, 32);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -179,10 +179,10 @@
             flowLayoutPanel1.BackColor = Color.LightCyan;
             flowLayoutPanel1.Controls.Add(panel2);
             flowLayoutPanel1.Dock = DockStyle.Left;
-            flowLayoutPanel1.Location = new Point(0, 108);
-            flowLayoutPanel1.Margin = new Padding(2, 3, 2, 3);
+            flowLayoutPanel1.Location = new Point(0, 40);
+            flowLayoutPanel1.Margin = new Padding(1, 1, 1, 1);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(0, 1494);
+            flowLayoutPanel1.Size = new Size(0, 490);
             flowLayoutPanel1.TabIndex = 9;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
@@ -192,10 +192,10 @@
             panel2.Controls.Add(Main);
             panel2.Controls.Add(Store);
             panel2.Controls.Add(Prof);
-            panel2.Location = new Point(2, 3);
-            panel2.Margin = new Padding(2, 3, 2, 3);
+            panel2.Location = new Point(1, 1);
+            panel2.Margin = new Padding(1, 1, 1, 1);
             panel2.Name = "panel2";
-            panel2.Size = new Size(338, 391);
+            panel2.Size = new Size(139, 143);
             panel2.TabIndex = 10;
             panel2.Paint += panel2_Paint;
             // 
@@ -203,10 +203,10 @@
             // 
             Main.AutoSize = true;
             Main.Font = new Font("Showcard Gothic", 14F);
-            Main.Location = new Point(29, 264);
-            Main.Margin = new Padding(2, 0, 2, 0);
+            Main.Location = new Point(12, 97);
+            Main.Margin = new Padding(1, 0, 1, 0);
             Main.Name = "Main";
-            Main.Size = new Size(268, 59);
+            Main.Size = new Size(109, 23);
             Main.TabIndex = 12;
             Main.Text = "Main Page";
             Main.Click += label4_Click;
@@ -215,10 +215,10 @@
             // 
             Store.AutoSize = true;
             Store.Font = new Font("Showcard Gothic", 14F);
-            Store.Location = new Point(29, 166);
-            Store.Margin = new Padding(2, 0, 2, 0);
+            Store.Location = new Point(12, 61);
+            Store.Margin = new Padding(1, 0, 1, 0);
             Store.Name = "Store";
-            Store.Size = new Size(169, 59);
+            Store.Size = new Size(71, 23);
             Store.TabIndex = 11;
             Store.Text = "Store";
             Store.Click += label3_Click;
@@ -227,10 +227,10 @@
             // 
             Prof.AutoSize = true;
             Prof.Font = new Font("Showcard Gothic", 14F);
-            Prof.Location = new Point(29, 70);
-            Prof.Margin = new Padding(2, 0, 2, 0);
+            Prof.Location = new Point(12, 26);
+            Prof.Margin = new Padding(1, 0, 1, 0);
             Prof.Name = "Prof";
-            Prof.Size = new Size(216, 59);
+            Prof.Size = new Size(88, 23);
             Prof.TabIndex = 10;
             Prof.Text = "Profile";
             Prof.Click += label2_Click;
@@ -245,18 +245,18 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Cooper Black", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(371, 357);
-            label3.Margin = new Padding(10, 0, 10, 0);
+            label3.Location = new Point(153, 131);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(727, 84);
+            label3.Size = new Size(289, 34);
             label3.TabIndex = 23;
             label3.Text = "Choose your game:";
             // 
             // MainPage
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1479, 1602);
+            ClientSize = new Size(609, 530);
             Controls.Add(label3);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel1);
@@ -265,7 +265,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 3, 2, 3);
+            Margin = new Padding(1, 1, 1, 1);
             Name = "MainPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Main Page Select";

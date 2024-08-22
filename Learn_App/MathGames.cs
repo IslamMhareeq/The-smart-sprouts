@@ -24,7 +24,7 @@ namespace Learn_App
         private void BtnGameA_Click(object sender, EventArgs e)
         {
             var form = new WriteNumbersInOrderForm(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -32,7 +32,7 @@ namespace Learn_App
         private void BtnGameB_Click(object sender, EventArgs e)
         {
             var form = new CompleteSequencesForm(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -40,7 +40,7 @@ namespace Learn_App
         private void BtnGameC_Click(object sender, EventArgs e)
         {
             var form = new AdditionForm(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -48,7 +48,7 @@ namespace Learn_App
         private void BtnGameD_Click(object sender, EventArgs e)
         {
             var form = new SubtractionForm(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close(); ;
         }
@@ -56,7 +56,7 @@ namespace Learn_App
         private void BtnGameE_Click(object sender, EventArgs e)
         {
             var form = new MultiplicationForm(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -89,7 +89,7 @@ namespace Learn_App
         private void label6_Click(object sender, EventArgs e)
         {
             var form = new MainPage(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }

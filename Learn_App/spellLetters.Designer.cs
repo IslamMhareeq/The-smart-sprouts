@@ -46,10 +46,9 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1077, 182);
-            button2.Margin = new Padding(7, 8, 7, 8);
+            button2.Location = new Point(443, 67);
             button2.Name = "button2";
-            button2.Size = new Size(260, 120);
+            button2.Size = new Size(107, 44);
             button2.TabIndex = 36;
             button2.Text = "Shuffle";
             button2.UseVisualStyleBackColor = true;
@@ -73,14 +72,14 @@
             userInputTextBox.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             userInputTextBox.ForeColor = Color.Black;
             userInputTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            userInputTextBox.Location = new Point(199, 741);
-            userInputTextBox.Margin = new Padding(34, 36, 34, 36);
+            userInputTextBox.Location = new Point(82, 271);
+            userInputTextBox.Margin = new Padding(14, 13, 14, 13);
             userInputTextBox.Name = "userInputTextBox";
             userInputTextBox.PasswordChar = '\0';
             userInputTextBox.PlaceholderText = "abcde , ABCDE , abCdE (A-E)";
             userInputTextBox.SelectedText = "";
             userInputTextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            userInputTextBox.Size = new Size(964, 169);
+            userInputTextBox.Size = new Size(397, 62);
             userInputTextBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             userInputTextBox.TabIndex = 39;
             userInputTextBox.TextChanged += userInputTextBox_TextChanged;
@@ -91,10 +90,9 @@
             label2.BackColor = Color.White;
             label2.Font = new Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(80, 618);
-            label2.Margin = new Padding(7, 0, 7, 0);
+            label2.Location = new Point(33, 226);
             label2.Name = "label2";
-            label2.Size = new Size(290, 69);
+            label2.Size = new Size(116, 27);
             label2.TabIndex = 40;
             label2.Text = "Answer:";
             // 
@@ -104,10 +102,9 @@
             questionLetter.BackColor = Color.White;
             questionLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             questionLetter.ForeColor = Color.Black;
-            questionLetter.Location = new Point(80, 210);
-            questionLetter.Margin = new Padding(7, 0, 7, 0);
+            questionLetter.Location = new Point(33, 77);
             questionLetter.Name = "questionLetter";
-            questionLetter.Size = new Size(148, 81);
+            questionLetter.Size = new Size(59, 32);
             questionLetter.TabIndex = 33;
             questionLetter.Text = "test";
             // 
@@ -115,10 +112,9 @@
             // 
             submitButton.BackColor = SystemColors.ActiveCaption;
             submitButton.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            submitButton.Location = new Point(480, 1001);
-            submitButton.Margin = new Padding(7, 8, 7, 8);
+            submitButton.Location = new Point(198, 366);
             submitButton.Name = "submitButton";
-            submitButton.Size = new Size(452, 186);
+            submitButton.Size = new Size(186, 68);
             submitButton.TabIndex = 41;
             submitButton.Text = "Submit";
             submitButton.UseVisualStyleBackColor = false;
@@ -149,9 +145,9 @@
             panel1.Controls.Add(label6);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2, 3, 2, 3);
+            panel1.Margin = new Padding(1, 1, 1, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1479, 137);
+            panel1.Size = new Size(609, 50);
             panel1.TabIndex = 42;
             panel1.Paint += panel1_Paint;
             // 
@@ -160,10 +156,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(480, 23);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(198, 8);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(591, 69);
+            label1.Size = new Size(234, 27);
             label1.TabIndex = 5;
             label1.Text = "The smart sprouts";
             label1.Click += label1_Click;
@@ -174,22 +170,22 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Cooper Black", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(2, 16);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Location = new Point(1, 6);
+            label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
-            label6.Size = new Size(207, 78);
+            label6.Size = new Size(82, 31);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
             // spellLetters
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Snow;
             BackgroundImage = Learn_App.Properties.Resources.WhatsApp_Image_2024_08_19_at_14_28_18_1225e67a;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1479, 1602);
+            ClientSize = new Size(609, 466);
             Controls.Add(panel1);
             Controls.Add(submitButton);
             Controls.Add(questionLetter);
@@ -197,7 +193,6 @@
             Controls.Add(userInputTextBox);
             Controls.Add(button2);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(7, 8, 7, 8);
             Name = "spellLetters";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "spellLetters";

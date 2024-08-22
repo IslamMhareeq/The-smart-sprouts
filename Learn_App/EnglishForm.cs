@@ -29,7 +29,7 @@ namespace WinFormsApp2
         private void letterOrder_Click(object sender, EventArgs e)
         {
             spellLetters form = new spellLetters(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
 
@@ -37,7 +37,7 @@ namespace WinFormsApp2
         private void letterMatch_Click(object sender, EventArgs e)
         {
             MatchingLetters form = new MatchingLetters(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -50,7 +50,7 @@ namespace WinFormsApp2
         private void label6_Click(object sender, EventArgs e)
         {
             var form = new MainPage(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }

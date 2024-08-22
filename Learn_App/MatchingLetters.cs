@@ -162,7 +162,7 @@ namespace WinFormsApp2
         private void label6_Click(object sender, EventArgs e)
         {
             var form = new EnglishForm(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }

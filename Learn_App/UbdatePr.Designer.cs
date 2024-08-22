@@ -45,9 +45,10 @@ namespace Learn_App
             // 
             changeN.AutoSize = true;
             changeN.Font = new Font("Stencil", 14F);
-            changeN.Location = new Point(81, 196);
+            changeN.Location = new Point(33, 81);
+            changeN.Margin = new Padding(1, 0, 1, 0);
             changeN.Name = "changeN";
-            changeN.Size = new Size(357, 56);
+            changeN.Size = new Size(145, 22);
             changeN.TabIndex = 0;
             changeN.Text = "Change Name:";
             // 
@@ -55,9 +56,10 @@ namespace Learn_App
             // 
             ChangeP.AutoSize = true;
             ChangeP.Font = new Font("Stencil", 14F);
-            ChangeP.Location = new Point(81, 530);
+            ChangeP.Location = new Point(33, 217);
+            ChangeP.Margin = new Padding(1, 0, 1, 0);
             ChangeP.Name = "ChangeP";
-            ChangeP.Size = new Size(474, 56);
+            ChangeP.Size = new Size(193, 22);
             ChangeP.TabIndex = 1;
             ChangeP.Text = "Change Password:";
             ChangeP.Click += label2_Click;
@@ -65,25 +67,28 @@ namespace Learn_App
             // txtN
             // 
             txtN.Font = new Font("Stencil", 14F);
-            txtN.Location = new Point(81, 283);
+            txtN.Location = new Point(33, 104);
+            txtN.Margin = new Padding(1);
             txtN.Name = "txtN";
-            txtN.Size = new Size(453, 63);
+            txtN.Size = new Size(189, 30);
             txtN.TabIndex = 3;
             // 
             // txtP
             // 
             txtP.Font = new Font("Stencil", 14F);
-            txtP.Location = new Point(81, 635);
+            txtP.Location = new Point(37, 240);
+            txtP.Margin = new Padding(1);
             txtP.Name = "txtP";
-            txtP.Size = new Size(453, 63);
+            txtP.Size = new Size(189, 30);
             txtP.TabIndex = 4;
             // 
             // BN
             // 
             BN.Font = new Font("Stencil", 14F);
-            BN.Location = new Point(81, 415);
+            BN.Location = new Point(33, 136);
+            BN.Margin = new Padding(1);
             BN.Name = "BN";
-            BN.Size = new Size(273, 60);
+            BN.Size = new Size(112, 41);
             BN.TabIndex = 6;
             BN.Text = "Confirm";
             BN.UseVisualStyleBackColor = true;
@@ -92,9 +97,10 @@ namespace Learn_App
             // BP
             // 
             BP.Font = new Font("Stencil", 14F);
-            BP.Location = new Point(81, 770);
+            BP.Location = new Point(37, 272);
+            BP.Margin = new Padding(1);
             BP.Name = "BP";
-            BP.Size = new Size(273, 60);
+            BP.Size = new Size(112, 38);
             BP.TabIndex = 7;
             BP.Text = "Confirm";
             BP.UseVisualStyleBackColor = true;
@@ -107,8 +113,9 @@ namespace Learn_App
             panel1.Controls.Add(label6);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1479, 102);
+            panel1.Size = new Size(609, 37);
             panel1.TabIndex = 11;
             // 
             // label1
@@ -116,9 +123,10 @@ namespace Learn_App
             label1.AutoSize = true;
             label1.Font = new Font("Cooper Black", 18F);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(437, 18);
+            label1.Location = new Point(180, 7);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(591, 69);
+            label1.Size = new Size(234, 27);
             label1.TabIndex = 6;
             label1.Text = "The smart sprouts";
             // 
@@ -126,18 +134,19 @@ namespace Learn_App
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Cooper Black", 18F);
-            label6.Location = new Point(3, 18);
+            label6.Location = new Point(1, 7);
+            label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
-            label6.Size = new Size(183, 69);
+            label6.Size = new Size(74, 27);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
             // UbdatePr
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1479, 1602);
+            ClientSize = new Size(609, 379);
             Controls.Add(panel1);
             Controls.Add(BP);
             Controls.Add(BN);
@@ -146,6 +155,7 @@ namespace Learn_App
             Controls.Add(ChangeP);
             Controls.Add(changeN);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(1);
             Name = "UbdatePr";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UbdatePr";

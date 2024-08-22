@@ -35,7 +35,7 @@ namespace Learn_App
         private void button1_Click(object sender, EventArgs e)
         {
             var form = new MathGames(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
 
@@ -45,7 +45,7 @@ namespace Learn_App
         private void button2_Click(object sender, EventArgs e)
         {
             var form = new HebrewGames(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
 
@@ -54,7 +54,7 @@ namespace Learn_App
         private void buttonEnglish_Click(object sender, EventArgs e)
         {
             var form = new EnglishForm(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -115,7 +115,7 @@ namespace Learn_App
         {
             var form = new WelcomeForm();
             ExcelFunctions.SaveLoginState(currentUser.Username, false);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
 
@@ -129,7 +129,7 @@ namespace Learn_App
         private void label4_Click(object sender, EventArgs e)
         {
             var form = new MainPage(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -155,7 +155,7 @@ namespace Learn_App
         private void label2_Click(object sender, EventArgs e)
         {
             var form = new ProfilePage(currentUser,userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -163,7 +163,7 @@ namespace Learn_App
         private void label3_Click(object sender, EventArgs e)
         {
             var form = new Store(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -176,7 +176,7 @@ namespace Learn_App
         private void label2_Click_1(object sender, EventArgs e)
         {
             var form = new WelcomeForm();
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }

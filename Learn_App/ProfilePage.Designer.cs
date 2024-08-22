@@ -44,9 +44,10 @@
             // btnUpdate
             // 
             btnUpdate.Font = new Font("Showcard Gothic", 15F);
-            btnUpdate.Location = new Point(80, 1356);
+            btnUpdate.Location = new Point(33, 496);
+            btnUpdate.Margin = new Padding(1, 1, 1, 1);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(596, 102);
+            btnUpdate.Size = new Size(245, 37);
             btnUpdate.TabIndex = 2;
             btnUpdate.Text = "Manage your user";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -59,8 +60,9 @@
             panel1.Controls.Add(label6);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(1, 1, 1, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1479, 105);
+            panel1.Size = new Size(609, 38);
             panel1.TabIndex = 10;
             // 
             // label5
@@ -68,9 +70,10 @@
             label5.AutoSize = true;
             label5.Font = new Font("Cooper Black", 18F);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(449, 25);
+            label5.Location = new Point(185, 9);
+            label5.Margin = new Padding(1, 0, 1, 0);
             label5.Name = "label5";
-            label5.Size = new Size(591, 69);
+            label5.Size = new Size(234, 27);
             label5.TabIndex = 6;
             label5.Text = "The smart sprouts";
             // 
@@ -78,9 +81,10 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Cooper Black", 18F);
-            label6.Location = new Point(12, 25);
+            label6.Location = new Point(5, 9);
+            label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
-            label6.Size = new Size(183, 69);
+            label6.Size = new Size(74, 27);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
@@ -89,71 +93,78 @@
             // 
             purchasedItemsListBox.Font = new Font("Showcard Gothic", 15F);
             purchasedItemsListBox.FormattingEnabled = true;
-            purchasedItemsListBox.ItemHeight = 62;
-            purchasedItemsListBox.Location = new Point(80, 809);
+            purchasedItemsListBox.ItemHeight = 26;
+            purchasedItemsListBox.Location = new Point(33, 296);
+            purchasedItemsListBox.Margin = new Padding(1, 1, 1, 1);
             purchasedItemsListBox.Name = "purchasedItemsListBox";
-            purchasedItemsListBox.Size = new Size(960, 500);
+            purchasedItemsListBox.Size = new Size(398, 160);
             purchasedItemsListBox.TabIndex = 14;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Showcard Gothic", 15F);
-            label8.Location = new Point(91, 687);
+            label8.Location = new Point(37, 251);
+            label8.Margin = new Padding(1, 0, 1, 0);
             label8.Name = "label8";
-            label8.Size = new Size(0, 62);
+            label8.Size = new Size(0, 26);
             label8.TabIndex = 22;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Showcard Gothic", 15F);
-            label7.Location = new Point(91, 284);
+            label7.Location = new Point(37, 104);
+            label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
-            label7.Size = new Size(0, 62);
+            label7.Size = new Size(0, 26);
             label7.TabIndex = 21;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Showcard Gothic", 15F);
-            label4.Location = new Point(91, 586);
+            label4.Location = new Point(37, 214);
+            label4.Margin = new Padding(1, 0, 1, 0);
             label4.Name = "label4";
-            label4.Size = new Size(0, 62);
+            label4.Size = new Size(0, 26);
             label4.TabIndex = 20;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Showcard Gothic", 15F);
-            label3.Location = new Point(91, 494);
+            label3.Location = new Point(37, 181);
+            label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(0, 62);
+            label3.Size = new Size(0, 26);
             label3.TabIndex = 19;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 15F);
-            label2.Location = new Point(91, 389);
+            label2.Location = new Point(37, 142);
+            label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(0, 62);
+            label2.Size = new Size(0, 26);
             label2.TabIndex = 18;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 15F);
-            label1.Location = new Point(91, 173);
+            label1.Location = new Point(37, 63);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(0, 62);
+            label1.Size = new Size(0, 26);
             label1.TabIndex = 17;
             // 
             // ProfilePage
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1479, 1602);
+            ClientSize = new Size(609, 615);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label4);
@@ -164,6 +175,7 @@
             Controls.Add(panel1);
             Controls.Add(btnUpdate);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(1, 1, 1, 1);
             Name = "ProfilePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ProfilePage";

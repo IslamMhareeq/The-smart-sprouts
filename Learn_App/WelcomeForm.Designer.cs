@@ -62,10 +62,10 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Cooper Black", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(175, 1481);
-            label4.Margin = new Padding(10, 0, 10, 0);
+            label4.Location = new Point(72, 542);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(414, 39);
+            label4.Size = new Size(168, 16);
             label4.TabIndex = 8;
             label4.Text = "Don't have an account?";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -77,10 +77,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Cooper Black", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.FromArgb(0, 0, 192);
-            button1.Location = new Point(580, 1454);
-            button1.Margin = new Padding(10, 8, 10, 8);
+            button1.Location = new Point(239, 532);
+            button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new Size(185, 107);
+            button1.Size = new Size(76, 39);
             button1.TabIndex = 9;
             button1.Text = "Register";
             button1.UseVisualStyleBackColor = false;
@@ -102,11 +102,11 @@
             LoginButton.Font = new Font("Cooper Black", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
             LoginButton.ForeColor = Color.Black;
             LoginButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            LoginButton.Location = new Point(381, 1626);
-            LoginButton.Margin = new Padding(5, 8, 5, 8);
+            LoginButton.Location = new Point(157, 595);
+            LoginButton.Margin = new Padding(2, 3, 2, 3);
             LoginButton.Name = "LoginButton";
             LoginButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            LoginButton.Size = new Size(517, 186);
+            LoginButton.Size = new Size(213, 68);
             LoginButton.TabIndex = 10;
             LoginButton.Text = "Log in";
             LoginButton.Click += Login_Click;
@@ -116,10 +116,10 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Cooper Black", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.Location = new Point(177, 842);
-            label5.Margin = new Padding(10, 0, 10, 0);
+            label5.Location = new Point(73, 308);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(470, 91);
+            label5.Size = new Size(187, 36);
             label5.TabIndex = 13;
             label5.Text = "Username:";
             // 
@@ -128,10 +128,10 @@
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Cooper Black", 24F, FontStyle.Italic);
-            label6.Location = new Point(175, 1166);
-            label6.Margin = new Padding(10, 0, 10, 0);
+            label6.Location = new Point(72, 427);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(461, 91);
+            label6.Size = new Size(184, 36);
             label6.TabIndex = 14;
             label6.Text = "Password:";
             // 
@@ -151,14 +151,14 @@
             usernameBox.Font = new Font("Segoe UI", 20F);
             usernameBox.ForeColor = Color.Black;
             usernameBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            usernameBox.Location = new Point(175, 988);
-            usernameBox.Margin = new Padding(26, 34, 26, 34);
+            usernameBox.Location = new Point(72, 361);
+            usernameBox.Margin = new Padding(11, 12, 11, 12);
             usernameBox.Name = "usernameBox";
             usernameBox.PasswordChar = '\0';
             usernameBox.PlaceholderText = "";
             usernameBox.SelectedText = "";
             usernameBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            usernameBox.Size = new Size(900, 107);
+            usernameBox.Size = new Size(371, 39);
             usernameBox.TabIndex = 11;
             // 
             // passwordBox
@@ -177,14 +177,14 @@
             passwordBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             passwordBox.ForeColor = Color.Black;
             passwordBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            passwordBox.Location = new Point(177, 1315);
-            passwordBox.Margin = new Padding(19, 27, 19, 27);
+            passwordBox.Location = new Point(73, 481);
+            passwordBox.Margin = new Padding(8, 10, 8, 10);
             passwordBox.Name = "passwordBox";
             passwordBox.PasswordChar = '*';
             passwordBox.PlaceholderText = "";
             passwordBox.SelectedText = "";
             passwordBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            passwordBox.Size = new Size(900, 107);
+            passwordBox.Size = new Size(371, 39);
             passwordBox.TabIndex = 15;
             // 
             // guna2CirclePictureBox1
@@ -192,12 +192,12 @@
             guna2CirclePictureBox1.BackColor = Color.Transparent;
             guna2CirclePictureBox1.Image = Learn_App.Properties.Resources._8980091;
             guna2CirclePictureBox1.ImageRotate = 0F;
-            guna2CirclePictureBox1.Location = new Point(381, 227);
-            guna2CirclePictureBox1.Margin = new Padding(5, 8, 5, 8);
+            guna2CirclePictureBox1.Location = new Point(157, 83);
+            guna2CirclePictureBox1.Margin = new Padding(2, 3, 2, 3);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges7;
             guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox1.Size = new Size(469, 607);
+            guna2CirclePictureBox1.Size = new Size(193, 222);
             guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             guna2CirclePictureBox1.TabIndex = 16;
             guna2CirclePictureBox1.TabStop = false;
@@ -207,10 +207,10 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Cooper Black", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(272, 120);
-            label1.Margin = new Padding(10, 0, 10, 0);
+            label1.Location = new Point(112, 44);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(810, 91);
+            label1.Size = new Size(324, 36);
             label1.TabIndex = 17;
             label1.Text = "The Smart Sprouts";
             label1.Click += label1_Click;
@@ -225,12 +225,12 @@
             HideButton.ImageOffset = new Point(0, 0);
             HideButton.ImageRotate = 0F;
             HideButton.ImageSize = new Size(70, 30);
-            HideButton.Location = new Point(1110, 1335);
-            HideButton.Margin = new Padding(5, 8, 5, 8);
+            HideButton.Location = new Point(457, 488);
+            HideButton.Margin = new Padding(2, 3, 2, 3);
             HideButton.Name = "HideButton";
             HideButton.PressedState.ImageSize = new Size(70, 30);
             HideButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            HideButton.Size = new Size(155, 87);
+            HideButton.Size = new Size(64, 32);
             HideButton.TabIndex = 18;
             HideButton.Click += hideButton_Click;
             // 
@@ -244,12 +244,12 @@
             ShowButton.ImageOffset = new Point(0, 0);
             ShowButton.ImageRotate = 0F;
             ShowButton.ImageSize = new Size(70, 30);
-            ShowButton.Location = new Point(1110, 1335);
-            ShowButton.Margin = new Padding(5, 8, 5, 8);
+            ShowButton.Location = new Point(457, 488);
+            ShowButton.Margin = new Padding(2, 3, 2, 3);
             ShowButton.Name = "ShowButton";
             ShowButton.PressedState.ImageSize = new Size(70, 30);
             ShowButton.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            ShowButton.Size = new Size(155, 87);
+            ShowButton.Size = new Size(64, 32);
             ShowButton.TabIndex = 19;
             ShowButton.Click += showButton_Click;
             // 
@@ -275,12 +275,12 @@
             closeButton.FillColor = Color.Red;
             closeButton.Font = new Font("Poor Richard", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             closeButton.ForeColor = Color.White;
-            closeButton.Location = new Point(1197, 8);
-            closeButton.Margin = new Padding(5, 8, 5, 8);
+            closeButton.Location = new Point(493, 3);
+            closeButton.Margin = new Padding(2, 3, 2, 3);
             closeButton.Name = "closeButton";
             closeButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
             closeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            closeButton.Size = new Size(100, 112);
+            closeButton.Size = new Size(41, 41);
             closeButton.TabIndex = 35;
             closeButton.Text = "X";
             closeButton.TextOffset = new Point(1, 0);
@@ -290,13 +290,13 @@
             // 
             // WelcomeForm
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.White;
             BackgroundImage = Learn_App.Properties.Resources.pngtree_simple_father_kid_grass_learning_bicycle_background_picture_image_1000095;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1302, 1842);
+            ClientSize = new Size(536, 687);
             Controls.Add(closeButton);
             Controls.Add(label1);
             Controls.Add(passwordBox);
@@ -310,7 +310,7 @@
             Controls.Add(HideButton);
             Controls.Add(guna2CirclePictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(10, 8, 10, 8);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "WelcomeForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

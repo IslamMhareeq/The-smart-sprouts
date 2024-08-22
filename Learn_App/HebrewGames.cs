@@ -26,7 +26,7 @@ namespace Learn_App
         private void label6_Click(object sender, EventArgs e)
         {
             var form = new MainPage(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -35,7 +35,7 @@ namespace Learn_App
         {
 
             var form = new MatchLetterHeb(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -43,7 +43,7 @@ namespace Learn_App
         private void letterMatch_Click(object sender, EventArgs e)
         {
             var form = new Hebrew(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }

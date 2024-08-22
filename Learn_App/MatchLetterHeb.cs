@@ -26,7 +26,7 @@ namespace Learn_App
         {
             userManager.UpdateUserPoints(currentUser, score);
             var form = new HebrewGames(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
 

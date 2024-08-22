@@ -52,20 +52,18 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(255, 230);
-            label1.Margin = new Padding(7, 0, 7, 0);
+            label1.Location = new Point(105, 84);
             label1.Name = "label1";
-            label1.Size = new Size(676, 106);
+            label1.Size = new Size(270, 45);
             label1.TabIndex = 25;
             label1.Text = "Match the letter:";
             // 
             // submitButton
             // 
             submitButton.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            submitButton.Location = new Point(444, 1281);
-            submitButton.Margin = new Padding(7, 8, 7, 8);
+            submitButton.Location = new Point(183, 469);
             submitButton.Name = "submitButton";
-            submitButton.Size = new Size(549, 183);
+            submitButton.Size = new Size(226, 67);
             submitButton.TabIndex = 26;
             submitButton.Text = "Submit";
             submitButton.UseVisualStyleBackColor = true;
@@ -74,10 +72,9 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1064, 230);
-            button2.Margin = new Padding(7, 8, 7, 8);
+            button2.Location = new Point(438, 84);
             button2.Name = "button2";
-            button2.Size = new Size(260, 120);
+            button2.Size = new Size(107, 44);
             button2.TabIndex = 27;
             button2.Text = "Shuffle";
             button2.UseVisualStyleBackColor = true;
@@ -86,10 +83,9 @@
             // aLetter
             // 
             aLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            aLetter.Location = new Point(848, 973);
-            aLetter.Margin = new Padding(7, 8, 7, 8);
+            aLetter.Location = new Point(349, 356);
             aLetter.Name = "aLetter";
-            aLetter.Size = new Size(330, 260);
+            aLetter.Size = new Size(136, 95);
             aLetter.TabIndex = 29;
             aLetter.UseVisualStyleBackColor = true;
             aLetter.Click += aLetter_Click;
@@ -97,10 +93,9 @@
             // bLetter
             // 
             bLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bLetter.Location = new Point(226, 973);
-            bLetter.Margin = new Padding(7, 8, 7, 8);
+            bLetter.Location = new Point(93, 356);
             bLetter.Name = "bLetter";
-            bLetter.Size = new Size(330, 260);
+            bLetter.Size = new Size(136, 95);
             bLetter.TabIndex = 30;
             bLetter.UseVisualStyleBackColor = true;
             bLetter.Click += bLetter_Click;
@@ -108,10 +103,9 @@
             // cLetter
             // 
             cLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cLetter.Location = new Point(848, 610);
-            cLetter.Margin = new Padding(7, 8, 7, 8);
+            cLetter.Location = new Point(349, 223);
             cLetter.Name = "cLetter";
-            cLetter.Size = new Size(330, 260);
+            cLetter.Size = new Size(136, 95);
             cLetter.TabIndex = 31;
             cLetter.UseVisualStyleBackColor = true;
             cLetter.Click += cLetter_Click;
@@ -119,10 +113,9 @@
             // dLetter
             // 
             dLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dLetter.Location = new Point(226, 610);
-            dLetter.Margin = new Padding(7, 8, 7, 8);
+            dLetter.Location = new Point(93, 223);
             dLetter.Name = "dLetter";
-            dLetter.Size = new Size(330, 260);
+            dLetter.Size = new Size(136, 95);
             dLetter.TabIndex = 32;
             dLetter.UseVisualStyleBackColor = true;
             dLetter.Click += dLetter_Click;
@@ -131,20 +124,18 @@
             // 
             questionLetter.AutoSize = true;
             questionLetter.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            questionLetter.Location = new Point(194, 90);
-            questionLetter.Margin = new Padding(7, 0, 7, 0);
+            questionLetter.Location = new Point(80, 33);
             questionLetter.Name = "questionLetter";
-            questionLetter.Size = new Size(0, 81);
+            questionLetter.Size = new Size(0, 32);
             questionLetter.TabIndex = 33;
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ControlLightLight;
             panel1.Controls.Add(questionLetter);
-            panel1.Location = new Point(538, 387);
-            panel1.Margin = new Padding(7, 8, 7, 8);
+            panel1.Location = new Point(222, 142);
             panel1.Name = "panel1";
-            panel1.Size = new Size(345, 189);
+            panel1.Size = new Size(142, 69);
             panel1.TabIndex = 34;
             panel1.Paint += panel1_Paint;
             // 
@@ -173,9 +164,9 @@
             panel2.Controls.Add(label6);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(2, 3, 2, 3);
+            panel2.Margin = new Padding(1, 1, 1, 1);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1479, 148);
+            panel2.Size = new Size(609, 54);
             panel2.TabIndex = 43;
             // 
             // label2
@@ -183,10 +174,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Cooper Black", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(432, 25);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(178, 9);
+            label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(591, 69);
+            label2.Size = new Size(234, 27);
             label2.TabIndex = 5;
             label2.Text = "The smart sprouts";
             label2.Click += label2_Click;
@@ -196,22 +187,22 @@
             label6.AutoSize = true;
             label6.Font = new Font("Cooper Black", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(2, 25);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Location = new Point(1, 9);
+            label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
-            label6.Size = new Size(207, 78);
+            label6.Size = new Size(82, 31);
             label6.TabIndex = 3;
             label6.Text = "Back";
             label6.Click += label6_Click;
             // 
             // MatchingLetters
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             BackgroundImage = Learn_App.Properties.Resources.WhatsApp_Image_2024_08_19_at_14_28_18_1225e67a;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1479, 1602);
+            ClientSize = new Size(609, 571);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(dLetter);
@@ -222,7 +213,6 @@
             Controls.Add(submitButton);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(7, 8, 7, 8);
             Name = "MatchingLetters";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MatchingLetters";

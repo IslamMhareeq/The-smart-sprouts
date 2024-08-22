@@ -111,7 +111,7 @@ namespace WinFormsApp2
             if (result == DialogResult.Yes)
             {
                 WelcomeForm welcomeForm = new WelcomeForm();
-                this.Hide();
+                this.Close();
 
 
                 welcomeForm.Show();

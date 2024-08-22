@@ -31,22 +31,38 @@ namespace WinFormsApp2
 
         private void GenerateRandomQuestion()
         {
-            char start = (char)random.Next('A', 'Z' + 1);
-            char end;
-
-            do
+            try
             {
-                end = (char)random.Next(start, 'Z' + 1);
-            } while (end <= start);
+                if (InvokeRequired)
+                {
+                    Invoke(new Action(GenerateRandomQuestion));
+                    return;
+                }
 
-            char[] sequence = Enumerable.Range(start, end - start + 1)
-                                        .Select(i => (char)i)
-                                        .ToArray();
-            correctAnswer = new string(sequence);
+                char start = (char)random.Next('A', 'Z');
+                char end;
 
-            currentQuestion = $"{start} - {end}";
-            questionLetter.Text = $"Spell the letters in order: {currentQuestion}";
+                // Ensure end is always greater than start
+                do
+                {
+                    end = (char)random.Next(start + 1, 'Z' + 1); // Start from start+1 to ensure a valid range
+                } while (end <= start);
+
+                char[] sequence = Enumerable.Range(start, end - start + 1)
+                                            .Select(i => (char)i)
+                                            .ToArray();
+                correctAnswer = new string(sequence);
+
+                currentQuestion = $"{start} - {end}";
+                questionLetter.Text = $"Spell the letters in order: {currentQuestion}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while generating the question: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Debug.WriteLine($"Exception: {ex}");
+            }
         }
+
 
 
         private string GenerateRandomSequence(int length)
@@ -84,10 +100,18 @@ namespace WinFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            userInputTextBox.Clear();
-
-            GenerateRandomQuestion();
+            try
+            {
+                userInputTextBox.Clear();
+                GenerateRandomQuestion();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Debug.WriteLine($"Exception: {ex}");
+            }
         }
+
 
         private void userInputTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -102,7 +126,7 @@ namespace WinFormsApp2
         private void label6_Click(object sender, EventArgs e)
         {
             var form = new EnglishForm(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }

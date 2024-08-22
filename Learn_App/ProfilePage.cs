@@ -38,7 +38,7 @@ namespace Learn_App
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             var form = new UbdatePr(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
@@ -51,7 +51,7 @@ namespace Learn_App
         private void label6_Click(object sender, EventArgs e)
         {
             var form = new MainPage(currentUser, userManager);
-            this.Hide();
+            this.Close();
             form.Show();
             form.FormClosed += (s, args) => this.Close();
         }
